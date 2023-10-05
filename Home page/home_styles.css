@@ -123,7 +123,7 @@ ul{
     font-size: 16px;
     font-style: normal;
     font-weight: 700;
-    line-height: 30px; /* 187.5% */
+    line-height: 30px;
     letter-spacing: 0.96px;
 }
 .button:hover{
@@ -189,12 +189,6 @@ ul{
     font-weight: 400;
     line-height: 24px;
     letter-spacing: 0.42px;
-}
-.line_box1{
-    width: 1200.002px;
-    height: 1px;
-    background: #000;
-    margin-bottom: 48px;
 }
 /* Main box 2 */
 .did{
@@ -346,157 +340,4 @@ ul{
 }
 .address:hover{
     color:#2196F3;
-}
-/* Page Portfolio */
-/* Portfolio header */
-.a_portfolio:visited{
-    color: #2196F3;
-}
-.P_header_line{
-    width: px;
-    height: 1px;
-    background: #ECECEC;
-    margin-top: 25px;
-    margin-left: auto;
-    margin-right: auto;
-}
-/* Portfolio main */
-.p_nav_box {
-    display: flex;
-    justify-content: center;
-    margin-top: 94px;
-}
-.p_nav {
-    display: flex;
-}
-.p_ul {
-    display: flex;
-    justify-content: space-between;
-    gap: 8px;
-}
-.p_li {
-    box-sizing: border-box;
-    padding: 6px 22px;
-    border-radius: 4px;
-    background: #F5F4FA;
-    color: #212121;
-    text-align: center;
-    font-family: Roboto;
-    font-size: 16px;
-    font-style: normal;
-    font-weight: 500;
-    line-height: 26px;
-    letter-spacing: 0.48px;
-}
-.p_li:hover{
-    border-radius: 4px;
-    background: #2196F3;
-    box-shadow: 0px 2px 2px 0px rgba(0, 0, 0, 0.12), 0px 1px 2px 0px rgba(0, 0, 0, 0.08), 0px 3px 1px 0px rgba(0, 0, 0, 0.10);
-    color: #FFF;
-    text-align: center;
-    font-family: Roboto;
-    font-size: 16px;
-    font-style: normal;
-    font-weight: 500;
-    line-height: 26px; 
-    letter-spacing: 0.48px;
-
-}
-/* Portfolio main box 1 */
-.portfolio_apps{
-    display: flex;
-    flex-wrap: wrap;
-    margin-top: 50px;
-    margin-bottom: 94px;
-    gap: 30px;
-
-}
-.apps_block {
-    display: flex;
-    flex-direction: column;
-    width: 370px;
-    height: 404px;
-    flex-shrink: 0;
-    border: 1px solid #EEE;
-    background: #FFF;
-    box-shadow: 1px 4px 6px 0px rgba(0, 0, 0, 0.16), 0px 4px 4px 0px rgba(0, 0, 0, 0.06), 0px 1px 1px 0px rgba(0, 0, 0, 0.12);
-}
-.apps_foto_1 {
-    width: 370px;
-    height: 294px;
-    flex-shrink: 0;
-    background: url("./img/img_pages2/Port_img_1.png"), lightgray 50% / cover no-repeat;
-}
-.apps_foto_2 {
-    width: 370px;
-    height: 294px;
-    flex-shrink: 0;
-    background: url("./img/img_pages2/Port_img_2.png"), lightgray 0px -45.881px / 100% 182.783% no-repeat;
-}
-.apps_foto_3 {
-    width: 370px;
-    height: 294px;
-    flex-shrink: 0;
-    background: url("./img/img_pages2/Port_img_3.png"), lightgray 50% / cover no-repeat;
-}
-.apps_foto_4 {
-    width: 370px;
-    height: 294px;
-    flex-shrink: 0;
-    background: url("./img/img_pages2/Port_img_4.png"), lightgray 50% / cover no-repeat;
-}
-.apps_foto_5 {
-    width: 370px;
-    height: 294px;
-    flex-shrink: 0;
-    background: url("./img/img_pages2/Port_img_5.png"), lightgray 50% / cover no-repeat;
-}
-.apps_foto_6{
-    width: 370px;
-    height: 294px;
-    flex-shrink: 0;
-    background: url("./img/img_pages2/Port_img_6.png"), lightgray 50% / cover no-repeat;
-}
-.apps_foto_7 {
-    width: 370px;
-    height: 294px;
-    flex-shrink: 0;
-    background: url("./img/img_pages2/Port_img_7.png"), lightgray 50% / cover no-repeat;
-}
-.apps_foto_8 {
-    width: 370px;
-    height: 294px;
-    flex-shrink: 0;
-    background: url("./img/img_pages2/Port_img_8.png"), lightgray 50% / cover no-repeat;
-}
-.apps_foto_9 {
-    width: 370px;
-    height: 294px;
-    flex-shrink: 0;
-    background: url("./img/img_pages2/Port_img_9.png"), lightgray 50% / cover no-repeat;
-}
-
-.apps_text {
-    display: flex;
-    flex-direction: column;
-    padding: 20px 24px;
-    gap: 4px;
-}
-.apps_h2 {
-    color: #212121;
-    font-family: Roboto;
-    font-size: 18px;
-    font-style: normal;
-    font-weight: 700;
-    line-height: 36px; 
-    letter-spacing: 1.08px;
-}
-.apps_h4 {
-    color: #757575;
-    font-family: Roboto;
-    font-size: 16px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: 30px;
-    letter-spacing: 0.48px;
 }
