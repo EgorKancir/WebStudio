@@ -29,6 +29,7 @@ ul{
     --212121: #212121;
     --2196F3: #2196F3;
     --757575: #757575;
+    --2f303a: #2F303A;
 }
 /*Header*/
 .header-console {
@@ -248,24 +249,10 @@ ul{
     flex-shrink: 0;
 }
 /* Main box 3 */
-.team__logo {
-    fill: var(--afb1b8);
-}
-.team__logo-element {
-    fill: var(--fff);
-}
-.team__logo:hover {
-    fill: var(--fff);
-}
-.team__logo-element:hover {
-    fill: var(--2196F3);
-}
-
-
 .team {
     height: 708px;
     margin: 0;
-    background: #F5F4FA;
+    background: var(--f5f4fa);
     display: flex;
     justify-content: center;
     align-items: center;
@@ -278,7 +265,7 @@ ul{
     gap: 50px;
 }
 .team__title {
-    color: #212121;
+    color: var(--212121);
     text-align: center;
     font-family: Roboto;
     font-size: 36px;
@@ -304,7 +291,7 @@ ul{
     gap: 30px;
     padding-bottom: 30px;
     border-radius: 0px 0px 4px 4px;
-    background: #FFF;
+    background: var(--fff);
     box-shadow: 0px 2px 1px 0px rgba(0, 0, 0, 0.20), 0px 1px 1px 0px rgba(0, 0, 0, 0.14), 0px 1px 3px 0px rgba(0, 0, 0, 0.12);
 }
 .team__image {
@@ -327,7 +314,7 @@ ul{
     gap: 10px;
 }
 .team__name {
-    color: #212121;
+    color: var(--212121);
     text-align: center;
     font-family: Roboto;
     font-size: 16px;
@@ -337,7 +324,7 @@ ul{
     letter-spacing: 0.48px;
 }
 .team__paragraf {
-    color: #757575;
+    color: var(--757575);
     text-align: center;
     font-family: Roboto;
     font-size: 16px;
@@ -352,39 +339,88 @@ ul{
     align-items: center;
     gap: 10px;
 }
-/* Footer box   */
-.background_thre{
-    height: 252px;
-    background: #2F303A;
+/* Company */
+.user {
+    height: 372px;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
-.footer_box{
+.user__content-box {
     display: flex;
     flex-direction: column;
-    align-items: flex-start;
+    align-items: center;
+    justify-content: center;
+    gap: 50px;
 }
-.info_box{
-    margin-top: 60px;
+.user__title {
+    color: var(--212121);
+    text-align: center;
+    font-family: Roboto;
+    font-size: 36px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    letter-spacing: 1.08px;
 }
-.footer_logo{
-    margin-bottom: 20px;
+.user__company-box {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 30px;
 }
-.kiev{
-    width: 231px;
-    height: 21px;
-    flex-shrink: 0;
-    color: #FFF;
+/* END Company */
+/* Footer box   */
+.footer-info {
+    height: 252px;
+    margin: 0;
+    background: var(--2f303a);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.footer-info__content-box {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    gap: 70px;
+}
+.footer-info__info-box {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+    gap: 20px;
+}
+.footer-info__logo {
+    width: 145px;
+    height: 31px;
+}
+.footer-info__adress-box {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+    gap: 9px;
+}
+.footer-info__adress {
+    color: var(--fff);
     font-family: Roboto;
     font-size: 14px;
     font-style: normal;
     font-weight: 400;
-    line-height: 24px; 
+    line-height: 24px;
     letter-spacing: 0.42px;
-    margin-bottom: 9px;
 }
-.address{
-    width: 136px;
-    height: 21px;
-    flex-shrink: 0;
+.footer-info__contact {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+    gap: 9px;
+}
+.footer-info__link-contact {
     color: rgba(255, 255, 255, 0.60);
     font-family: Roboto;
     font-size: 14px;
@@ -392,13 +428,30 @@ ul{
     font-weight: 400;
     line-height: 24px;
     letter-spacing: 0.42px;
-    margin-bottom: 9px;
-
 }
-.info_comp{
+.footer-info__link-contact:hover {
+    color: var(--2196F3);
+}
+.footer-info__subscribe-box {
     display: flex;
     flex-direction: column;
+    align-items: start;
+    justify-content: center;
+    gap: 20px;
 }
-.address:hover{
-    color:#2196F3;
+.footer-info__title-subscribe {
+    color: var(--fff);
+    font-family: Roboto;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    letter-spacing: 0.42px;
+    text-transform: uppercase;
+}
+.footer-info__social-networks-box {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    gap: 10px;
 }
