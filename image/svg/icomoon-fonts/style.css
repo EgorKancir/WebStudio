@@ -51,7 +51,6 @@
   margin-left: -1em;
   color: #fff;
 }
-
 .icon-facebook_foot .path1:before {
   content: "\e903";
   color: rgb(255, 255, 255);
@@ -69,8 +68,6 @@
   color: rgb(255, 255, 255);
   font-size: 44px;
 }
-
-
 .icon-instagram .path1:before {
   content: "\e905";
   color: #fff;
