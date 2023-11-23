@@ -103,7 +103,7 @@ ul{
 .services {
     height: 600px;
     margin: 0;
-    background-image: url("./image/img/section1/background_one.png");
+    background-image: url("../image/img/section1/background_one.png");
     background-repeat: no-repeat;
     background-size: cover;
     display: flex;
@@ -179,16 +179,16 @@ ul{
     margin-bottom: 30px;
 }
 .achievement__element:nth-child(1)::before {
-    background-image: url("./image/img/section2/antenna1.png");
+    background-image: url("../image/img/section2/antenna1.png");
 }
 .achievement__element:nth-child(2)::before {
-    background-image: url("./image/img/section2/clock1.png");
+    background-image: url("../image/img/section2/clock1.png");
 }
 .achievement__element:nth-child(3)::before {
-    background-image: url("./image/img/section2/diagram1.png");
+    background-image: url("../image/img/section2/diagram1.png");
 }
 .achievement__element:nth-child(4)::before {
-    background-image: url("./image/img/section2/astronaut1.png");
+    background-image: url("../image/img/section2/astronaut1.png");
 }
 .achievement__element-title {
     color: var(--212121);

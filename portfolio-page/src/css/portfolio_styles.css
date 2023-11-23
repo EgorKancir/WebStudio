@@ -194,31 +194,31 @@ ul{
     flex-shrink: 0;
 }
 .projects__link:nth-child(1) .projects__image {
-    background: url("./image/img/section2/port-img_1.png"), lightgray 50% / cover no-repeat;
+    background: url("../image/img/section2/port-img_1.png"), lightgray 50% / cover no-repeat;
 }
 .projects__link:nth-child(2) .projects__image {
-    background: url("./image/img/section2/port-img_2.png"), lightgray 0px -45.881px / 100% 182.783% no-repeat;
+    background: url("../image/img/section2/port-img_2.png"), lightgray 0px -45.881px / 100% 182.783% no-repeat;
 }
 .projects__link:nth-child(3) .projects__image {
-    background: url("./image/img/section2/port-img_3.png"), lightgray 50% / cover no-repeat;
+    background: url("../image/img/section2/port-img_3.png"), lightgray 50% / cover no-repeat;
 }
 .projects__link:nth-child(4) .projects__image {
-    background: url("./image/img/section2/port-img_4.png"), lightgray 50% / cover no-repeat;
+    background: url("../image/img/section2/port-img_4.png"), lightgray 50% / cover no-repeat;
 }
 .projects__link:nth-child(5) .projects__image {
-    background: url("./image/img/section2/port-img_5.png"), lightgray 50% / cover no-repeat;
+    background: url("../image/img/section2/port-img_5.png"), lightgray 50% / cover no-repeat;
 }
 .projects__link:nth-child(6) .projects__image {
-    background: url("./image/img/section2/port-img_6.png"), lightgray 50% / cover no-repeat;
+    background: url("../image/img/section2/port-img_6.png"), lightgray 50% / cover no-repeat;
 }
 .projects__link:nth-child(7) .projects__image {
-    background: url("./image/img/section2/port-img_7.png"), lightgray 50% / cover no-repeat;
+    background: url("../image/img/section2/port-img_7.png"), lightgray 50% / cover no-repeat;
 }
 .projects__link:nth-child(8) .projects__image {
-    background: url("./image/img/section2/port-img_8.png"), lightgray 50% / cover no-repeat;
+    background: url("../image/img/section2/port-img_8.png"), lightgray 50% / cover no-repeat;
 }
 .projects__link:nth-child(9) .projects__image {
-    background: url("./image/img/section2/port-img_9.png"), lightgray 50% / cover no-repeat;
+    background: url("../image/img/section2/port-img_9.png"), lightgray 50% / cover no-repeat;
 }
 .projects__text-box {
     display: flex;
