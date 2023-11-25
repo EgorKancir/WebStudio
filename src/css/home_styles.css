@@ -240,10 +240,60 @@ ul{
     align-items: center;
     gap: 30px;
 }
+.work__box_hover {
+    width: 370px;
+    height: 294px;
+    position: relative;
+}
 .work__image {
     width: 370px;
     height: 294px;
     flex-shrink: 0;
+    position: absolute;
+    background-repeat: no-repeat;
+    background-size: cover;
+    top: 0px;
+    left: 0px;
+    z-index: 3;
+}
+.work__link-box:nth-child(1) > .work__box_hover > .work__image {
+    background-image: url("../image/img/section3/img1.jpg");
+}
+.work__link-box:nth-child(2) > .work__box_hover > .work__image {
+    background-image: url("../image/img/section3/img2.jpg");
+}
+.work__link-box:nth-child(3) > .work__box_hover > .work__image {
+    background-image: url("../image/img/section3/img3.jpg");
+}
+.work__image:hover {
+    z-index: 1;
+    transition: 0.3s;
+}
+.work__image-text-box_hover {
+    width: 370px;
+    height: 70px;
+    flex-shrink: 0;
+    background: rgba(47, 48, 58, 0.80);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    bottom: 0px;
+    z-index: 2;
+}
+.work__image-text-box_hover:hover {
+    z-index: 3;
+}
+.work__image-text {
+    color: var(--fff);
+    text-align: center;
+    font-family: Roboto;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    letter-spacing: 0.42px;
+    text-transform: uppercase;
 }
 /* Main box 3 */
 .team {
