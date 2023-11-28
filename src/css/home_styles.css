@@ -1,6 +1,6 @@
 *
 body{
-    background: white;
+    background: var(--white-standard-color);
     margin:0;
 }
 .conteiner{
@@ -17,13 +17,16 @@ ul{
     list-style: none;
 }
 :root {
-    --fff: #fff;
-    --afb1b8: #AFB1B8;
-    --f5f4fa: #F5F4FA;
-    --212121: #212121;
-    --2196f3: #2196F3;
-    --757575: #757575;
-    --2f303a: #2F303A;
+    --white-standard-color: #fff;
+    --white-standard-color_hover: #fff; 
+    --white_standard-color_text: #fff;
+    --white_standard-color_text-hover: #fff;
+    --white-dark-color: #F5F4FA;
+    --black-standard-color_text: #212121;
+    --blue-light-color: #2196F3;
+    --blue-light-color_text-hover: #2196F3;
+    --gray-dark-color_text: #757575;
+    --black-light-color: #2F303A;
 }
 /*Header*/
 .header-console {
@@ -64,7 +67,7 @@ ul{
     gap: 50px;
 }
 .header-console__option {
-    color: var(--212121);
+    color: var(--black-standard-color_text);
     font-family: Roboto;
     font-size: 14px;
     font-style: normal;
@@ -73,10 +76,10 @@ ul{
     letter-spacing: 0.28px;
 }
 .header-console__option:nth-child(1) .header-console__option-link:visited {
-    color: var(--2196f3);
+    color: var(--blue-light-color_text-hover);
 }
 .header-console__option-link:hover {
-    color: var(--2196f3);
+    color: var(--blue-light-color_text-hover);
 }
 .header-console__information {
     display: flex;
@@ -85,7 +88,7 @@ ul{
     gap: 50px;
 }
 .header-console__info {
-    color: var(--757575);
+    color: var(--gray-dark-color_text);
     font-family: Roboto;
     font-size: 14px;
     font-style: normal;
@@ -97,7 +100,7 @@ ul{
     gap: 10px;
 }
 .header-console__info:hover {
-    color: var(--2196f3);
+    color: var(--blue-light-color_text-hover);
 }
 /*Main*/
 .services {
@@ -119,7 +122,7 @@ ul{
 }
 .services__title {
     width: 696px;
-    color: var(--fff);
+    color: var(--white_standard-color_text);
     text-align: center;
     font-family: Roboto;
     font-size: 44px;
@@ -134,9 +137,9 @@ ul{
     height: 50px;
     flex-shrink: 0;
     border-radius: 4px;
-    background: var(--2196f3);
+    background: var(--blue-light-color);
     box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
-    color: var(--fff);
+    color: var(--white_standard-color_text);
     text-align: center;
     font-family: Roboto;
     font-size: 16px;
@@ -146,7 +149,7 @@ ul{
     letter-spacing: 0.96px;
 }
 .services__button:hover {
-    box-shadow: 0px 0px 20px 13px var(--fff);
+    box-shadow: 0px 0px 20px 13px var(--white-standard-color_hover);
 }
 /* Main box 1 */
 .achievement {
@@ -172,7 +175,7 @@ ul{
     height: 120px;
     flex-shrink: 0;
     border-radius: 4px;
-    background: var(--f5f4fa);
+    background: var(--white-dark-color);
     background-repeat: no-repeat;
     background-position: center;
     background-size:70px 70px;
@@ -191,7 +194,7 @@ ul{
     background-image: url("../image/img/section2/astronaut1.png");
 }
 .achievement__element-title {
-    color: var(--212121);
+    color: var(--black-standard-color_text);
     font-family: Roboto;
     font-size: 14px;
     font-style: normal;
@@ -201,7 +204,7 @@ ul{
     text-transform: uppercase;
 }
 .achievement__element-paragraf {
-    color: var(--757575);
+    color: var(--gray-dark-color_text);
     font-family: Roboto;
     font-size: 14px;
     font-style: normal;
@@ -225,7 +228,7 @@ ul{
     gap: 50px;
 }
 .work__title {
-    color: var(--212121);
+    color: var(--black-standard-color_text);
     text-align: center;
     font-family: Roboto;
     font-size: 36px;
@@ -265,11 +268,8 @@ ul{
 .work__link-box:nth-child(3) > .work__box_hover > .work__image {
     background-image: url("../image/img/section3/img3.jpg");
 }
-.work__image:hover {
-    z-index: 1;
-    transition: 0.3s;
-}
-.work__image-text-box_hover {
+.work__image:hover::before {
+    content: "";
     width: 370px;
     height: 70px;
     flex-shrink: 0;
@@ -279,13 +279,7 @@ ul{
     align-items: center;
     position: absolute;
     bottom: 0px;
-    z-index: 2;
-}
-.work__image-text-box_hover:hover {
-    z-index: 3;
-}
-.work__image-text {
-    color: var(--fff);
+    color: var(--white_standard-color_text-hover);
     text-align: center;
     font-family: Roboto;
     font-size: 14px;
@@ -295,11 +289,20 @@ ul{
     letter-spacing: 0.42px;
     text-transform: uppercase;
 }
+.work__link-box:nth-child(1) > .work__box_hover > .work__image:hover::before {
+    content: "Десктопні додатки";
+}
+.work__link-box:nth-child(2) > .work__box_hover > .work__image:hover::before {
+    content: "Мобільні додатки";
+}
+.work__link-box:nth-child(3) > .work__box_hover > .work__image:hover::before {
+    content: "Дизайнерські рішення";
+}
 /* Main box 3 */
 .team {
     height: 708px;
     margin: 0;
-    background: var(--f5f4fa);
+    background: var(--white-dark-color);
     display: flex;
     justify-content: center;
     align-items: center;
@@ -312,7 +315,7 @@ ul{
     gap: 50px;
 }
 .team__title {
-    color: var(--212121);
+    color: var(--black-standard-color_text);
     text-align: center;
     font-family: Roboto;
     font-size: 36px;
@@ -338,7 +341,7 @@ ul{
     gap: 30px;
     padding-bottom: 30px;
     border-radius: 0px 0px 4px 4px;
-    background: var(--fff);
+    background: var(--white-standard-color);
     box-shadow: 0px 2px 1px 0px rgba(0, 0, 0, 0.20), 0px 1px 1px 0px rgba(0, 0, 0, 0.14), 0px 1px 3px 0px rgba(0, 0, 0, 0.12);
 }
 .team__image {
@@ -361,7 +364,7 @@ ul{
     gap: 10px;
 }
 .team__name {
-    color: var(--212121);
+    color: var(--black-standard-color_text);
     text-align: center;
     font-family: Roboto;
     font-size: 16px;
@@ -371,7 +374,7 @@ ul{
     letter-spacing: 0.48px;
 }
 .team__paragraf {
-    color: var(--757575);
+    color: var(--gray-dark-color_text);
     text-align: center;
     font-family: Roboto;
     font-size: 16px;
@@ -402,7 +405,7 @@ ul{
     gap: 50px;
 }
 .user__title {
-    color: var(--212121);
+    color: var(--black-standard-color_text);
     text-align: center;
     font-family: Roboto;
     font-size: 36px;
@@ -422,7 +425,7 @@ ul{
 .footer-info {
     height: 252px;
     margin: 0;
-    background: var(--2f303a);
+    background: var(--black-light-color);
     display: flex;
     justify-content: center;
     align-items: center;
@@ -452,7 +455,7 @@ ul{
     gap: 9px;
 }
 .footer-info__adress {
-    color: var(--fff);
+    color: var(--white_standard-color_text);
     font-family: Roboto;
     font-size: 14px;
     font-style: normal;
@@ -477,7 +480,7 @@ ul{
     letter-spacing: 0.42px;
 }
 .footer-info__link-contact:hover {
-    color: var(--2196f3);
+    color: var(--blue-light-color_text-hover);
 }
 .footer-info__subscribe-box {
     display: flex;
@@ -487,7 +490,7 @@ ul{
     gap: 20px;
 }
 .footer-info__title-subscribe {
-    color: var(--fff);
+    color: var(--white_standard-color_text);
     font-family: Roboto;
     font-size: 14px;
     font-style: normal;
