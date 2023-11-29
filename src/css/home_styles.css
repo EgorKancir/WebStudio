@@ -258,6 +258,7 @@ ul{
     top: 0px;
     left: 0px;
     z-index: 3;
+    overflow: hidden;
 }
 .work__link-box:nth-child(1) > .work__box_hover > .work__image {
     background-image: url("../image/img/section3/img1.jpg");
@@ -268,7 +269,7 @@ ul{
 .work__link-box:nth-child(3) > .work__box_hover > .work__image {
     background-image: url("../image/img/section3/img3.jpg");
 }
-.work__image:hover::before {
+.work__image::before {
     content: "";
     width: 370px;
     height: 70px;
@@ -278,7 +279,8 @@ ul{
     justify-content: center;
     align-items: center;
     position: absolute;
-    bottom: 0px;
+    transform: translate(0, 294px);
+    transition: transform 0.2s linear;
     color: var(--white_standard-color_text-hover);
     text-align: center;
     font-family: Roboto;
@@ -289,13 +291,16 @@ ul{
     letter-spacing: 0.42px;
     text-transform: uppercase;
 }
-.work__link-box:nth-child(1) > .work__box_hover > .work__image:hover::before {
+.work__image:hover::before {
+    transform: translate(0, 224px);
+}
+.work__link-box:nth-child(1) > .work__box_hover > .work__image::before {
     content: "Десктопні додатки";
 }
-.work__link-box:nth-child(2) > .work__box_hover > .work__image:hover::before {
+.work__link-box:nth-child(2) > .work__box_hover > .work__image::before {
     content: "Мобільні додатки";
 }
-.work__link-box:nth-child(3) > .work__box_hover > .work__image:hover::before {
+.work__link-box:nth-child(3) > .work__box_hover > .work__image::before {
     content: "Дизайнерські рішення";
 }
 /* Main box 3 */
