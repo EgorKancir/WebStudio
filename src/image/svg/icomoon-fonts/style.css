@@ -1,10 +1,10 @@
 @font-face {
   font-family: 'icomoon';
-  src:  url('fonts/icomoon.eot?lia6e8');
-  src:  url('fonts/icomoon.eot?lia6e8#iefix') format('embedded-opentype'),
-    url('fonts/icomoon.ttf?lia6e8') format('truetype'),
-    url('fonts/icomoon.woff?lia6e8') format('woff'),
-    url('fonts/icomoon.svg?lia6e8#icomoon') format('svg');
+  src:  url('fonts/icomoon.eot?ev025v');
+  src:  url('fonts/icomoon.eot?ev025v#iefix') format('embedded-opentype'),
+    url('fonts/icomoon.ttf?ev025v') format('truetype'),
+    url('fonts/icomoon.woff?ev025v') format('woff'),
+    url('fonts/icomoon.svg?ev025v#icomoon') format('svg');
   font-weight: normal;
   font-style: normal;
   font-display: block;
@@ -25,6 +25,11 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
+.icon-telegram:before {
+  content: "\e925";
+  color: inherit;
+  font-size: 24px;
+}
 .icon-envelope:before {
   content: "\e900";
   color: inherit;
