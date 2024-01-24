@@ -29,7 +29,7 @@ ul {
     --gray-dark-color_text: #757575;
     --black-light-color: #2F303A;
 }
-/*Header*/
+/*Section 1 header*/
 .header-console {
     display: flex;
     justify-content: center;
@@ -128,12 +128,13 @@ ul {
     transition: all 0.2s ease;    
     color: var(--blue-light-color_text-hover);
 }
-/*Main*/
+/* Section 1 header end */
+/*Section 2 services*/
 .services {
     margin: 0;
     padding: 200px 0px;
     background: rgba(47, 48, 58, 0.40);
-    background-image: url("../image/raster-image/section1_services/background_one.png");
+    background-image: url("../image/raster-image/section2_services/background_one.png");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -303,7 +304,7 @@ button {
     line-height: normal;
     letter-spacing: 0.12px;
 }
-.secrvices__info-form {
+.services__info-form {
     width: 406px;
     height: 40px;
     flex-shrink: 0;
@@ -315,28 +316,28 @@ button {
     background-position: 11px 12px;
     background-repeat: no-repeat;
 }
-.services__info-box:nth-child(1) > .secrvices__info-form {
+.services__info-box:nth-child(1) > .services__info-form {
     background-image: url("../image/vector-image/icomoon-svg/SVG/person.svg");
 }
-.services__info-box:nth-child(1) > .secrvices__info-form:focus-visible {
+.services__info-box:nth-child(1) > .services__info-form:focus-visible {
     background-image: url("../image/vector-image/icomoon-svg/SVG/person-color.svg");
 }
-.services__info-box:nth-child(2) > .secrvices__info-form {
+.services__info-box:nth-child(2) > .services__info-form {
     background-image: url("../image/vector-image/icomoon-svg/SVG/phone.svg");
 }
-.services__info-box:nth-child(2) > .secrvices__info-form:focus-visible {
+.services__info-box:nth-child(2) > .services__info-form:focus-visible {
     background-image: url("../image/vector-image/icomoon-svg/SVG/phone-color.svg");
 }
-.services__info-box:nth-child(3) > .secrvices__info-form {
+.services__info-box:nth-child(3) > .services__info-form {
     background-image: url("../image/vector-image/icomoon-svg/SVG/email.svg");
 }
-.services__info-box:nth-child(3) > .secrvices__info-form:focus-visible {
+.services__info-box:nth-child(3) > .services__info-form:focus-visible {
     background-image: url("../image/vector-image/icomoon-svg/SVG/email-color.svg");
 }
-.secrvices__info-form:focus-visible {
+.services__info-form:focus-visible {
     outline:  1px solid var(--blue-light-color);
 }
-.secrvices__commit-form {
+.services__commit-form {
     width: 416px;
     height: 96px;
     flex-shrink: 0;
@@ -351,7 +352,7 @@ button {
     letter-spacing: 0.12px;
     padding: 12px 16px;
 }
-.secrvices__commit-form:focus-visible {
+.services__commit-form:focus-visible {
     outline:  1px solid var(--blue-light-color);
     color: var(--black-standard-color_text);
 }
@@ -404,7 +405,8 @@ button {
     transition: all 0.2s linear;
 }
 /* Modal end */
-/* Main box 1 */
+/* Section 2 services end */
+/* Section 3 achievement */
 .achievement {
     margin: 0;
     padding: 94px 0;
@@ -433,16 +435,16 @@ button {
     margin-bottom: 30px;
 }
 .achievement__element:nth-child(1)::before {
-    background-image: url("../image/raster-image/section2_achievement/antenna1.png");
+    background-image: url("../image/raster-image/section3_achievement/antenna1.png");
 }
 .achievement__element:nth-child(2)::before {
-    background-image: url("../image/raster-image/section2_achievement/clock1.png");
+    background-image: url("../image/raster-image/section3_achievement/clock1.png");
 }
 .achievement__element:nth-child(3)::before {
-    background-image: url("../image/raster-image/section2_achievement/diagram1.png");
+    background-image: url("../image/raster-image/section3_achievement/diagram1.png");
 }
 .achievement__element:nth-child(4)::before {
-    background-image: url("../image/raster-image/section2_achievement/astronaut1.png");
+    background-image: url("../image/raster-image/section3_achievement/astronaut1.png");
 }
 .achievement__element-title {
     color: var(--black-standard-color_text);
@@ -464,7 +466,8 @@ button {
     line-height: 24px;
     letter-spacing: 0.42px;
 }
-/* Main box 2 */
+/* Section 3 achievement end */
+/* Section 4 work */
 .work {
     margin: 0;
     padding-bottom: 94px;
@@ -511,13 +514,13 @@ button {
     overflow: hidden;
 }
 .work__link-box:nth-child(1) > .work__box_hover > .work__image {
-    background-image: url("../image/raster-image/section3_work/img1.jpg");
+    background-image: url("../image/raster-image/section4_work/img1.jpg");
 }
 .work__link-box:nth-child(2) > .work__box_hover > .work__image {
-    background-image: url("../image/raster-image/section3_work/img2.jpg");
+    background-image: url("../image/raster-image/section4_work/img2.jpg");
 }
 .work__link-box:nth-child(3) > .work__box_hover > .work__image {
-    background-image: url("../image/raster-image/section3_work/img3.jpg");
+    background-image: url("../image/raster-image/section4_work/img3.jpg");
 }
 .work__image::before {
     content: "";
@@ -564,7 +567,8 @@ button {
     content: "Дизайнерські рішення";
     animation: work-hover 6s linear 4s infinite alternate backwards;
 }
-/* Main box 3 */
+/* Section 4 work end */
+/* Section 5 team */
 .team {
     margin: 0;
     padding: 94px 0;
@@ -657,7 +661,8 @@ button {
     align-items: center;
     gap: 10px;
 }
-/* Company */
+/* Section 5 team end */
+/* Section 6 user */
 .user {
     margin: 0;
     padding: 94px 0;
@@ -692,8 +697,8 @@ button {
     justify-content: space-between;
     align-items: center;
 }
-/* END Company */
-/* Footer box   */
+/* Section 6 user end */
+/* Section 7 footer-info */
 .footer-info {
     margin: 0;
     padding: 60px 0;
@@ -859,3 +864,4 @@ button {
     transform: scale(1.05);
     transition: all 0.2s linear;
 }
+/* Section 7 footer-info end */

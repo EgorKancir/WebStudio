@@ -31,7 +31,7 @@ ul {
     --gray-light-color_border: #EEE;
     --gray-light-color_border-hover: #EEE;
 }
-/*Header*/
+/*Section 1 header-console */
 .header-console {
     display: flex;
     justify-content: center;
@@ -131,7 +131,7 @@ ul {
     transition: all 0.2s ease;  
     color: var(--blue-light-color_text-hover);
 }
-/* Portfolio main */
+/* Section 1 header-console end */
 .main {
     padding: 94px 0;
     display: flex;
@@ -140,7 +140,7 @@ ul {
     justify-content: center;
     gap: 50px;
 }
-/* Navigation */
+/* Section 2 navigtion-console */
 .navigtion-console {
     display: flex;
     justify-content: center;
@@ -179,7 +179,8 @@ ul {
     box-shadow: 0px 2px 2px 0px rgba(0, 0, 0, 0.12), 0px 1px 2px 0px rgba(0, 0, 0, 0.08), 0px 3px 1px 0px rgba(0, 0, 0, 0.10);
     transition: 0.2s;
 }
-/* Portfolio main box 1 */
+/* Section 2 navigtion-console end */
+/* Section 3 projects */
 .projects {
     margin: 0;
     padding: 0;
@@ -241,31 +242,31 @@ ul {
     letter-spacing: 0.54px;
 }
 .projects__link:nth-child(1) .projects__image {
-    background: url("../image/raster-image/section2_projects/port-img_1.png"), lightgray 50% / cover no-repeat;
+    background: url("../image/raster-image/section3_projects/port-img_1.png"), lightgray 50% / cover no-repeat;
 }
 .projects__link:nth-child(2) .projects__image {
-    background: url("../image/raster-image/section2_projects/port-img_2.png"), lightgray 0px -45.881px / 100% 182.783% no-repeat;
+    background: url("../image/raster-image/section3_projects/port-img_2.png"), lightgray 0px -45.881px / 100% 182.783% no-repeat;
 }
 .projects__link:nth-child(3) .projects__image {
-    background: url("../image/raster-image/section2_projects/port-img_3.png"), lightgray 50% / cover no-repeat;
+    background: url("../image/raster-image/section3_projects/port-img_3.png"), lightgray 50% / cover no-repeat;
 }
 .projects__link:nth-child(4) .projects__image {
-    background: url("../image/raster-image/section2_projects/port-img_4.png"), lightgray 50% / cover no-repeat;
+    background: url("../image/raster-image/section3_projects/port-img_4.png"), lightgray 50% / cover no-repeat;
 }
 .projects__link:nth-child(5) .projects__image {
-    background: url("../image/raster-image/section2_projects/port-img_5.png"), lightgray 50% / cover no-repeat;
+    background: url("../image/raster-image/section3_projects/port-img_5.png"), lightgray 50% / cover no-repeat;
 }
 .projects__link:nth-child(6) .projects__image {
-    background: url("../image/raster-image/section2_projects/port-img_6.png"), lightgray 50% / cover no-repeat;
+    background: url("../image/raster-image/section3_projects/port-img_6.png"), lightgray 50% / cover no-repeat;
 }
 .projects__link:nth-child(7) .projects__image {
-    background: url("../image/raster-image/section2_projects/port-img_7.png"), lightgray 50% / cover no-repeat;
+    background: url("../image/raster-image/section3_projects/port-img_7.png"), lightgray 50% / cover no-repeat;
 }
 .projects__link:nth-child(8) .projects__image {
-    background: url("../image/raster-image/section2_projects/port-img_8.png"), lightgray 50% / cover no-repeat;
+    background: url("../image/raster-image/section3_projects/port-img_8.png"), lightgray 50% / cover no-repeat;
 }
 .projects__link:nth-child(9) .projects__image {
-    background: url("../image/raster-image/section2_projects/port-img_9.png"), lightgray 50% / cover no-repeat;
+    background: url("../image/raster-image/section3_projects/port-img_9.png"), lightgray 50% / cover no-repeat;
 }
 .projects__text-box {
     display: flex;
@@ -293,7 +294,8 @@ ul {
     line-height: 30px;
     letter-spacing: 0.48px;
 }
-/* Footer box   */
+/* Section 3 projects end */
+/* Section 4 footer-info */
 .footer-info {
     margin: 0;
     padding: 60px 0;
@@ -460,3 +462,4 @@ ul {
     transform: scale(1.05);
     transition: all 0.2s linear;
 }
+/* Section 4 footer-info end */

@@ -1,0 +1,51 @@
+body {
+    background: var(--white-standard-color);
+    margin:0;
+}
+.container {
+    width: 1170px;
+    padding: 0 15px;
+    margin: 0 auto;
+}
+a {
+    text-decoration: none;
+    color: inherit;
+}
+ul {
+    display: flex;
+    list-style: none;
+}
+:root {
+    --white-standard-color: #fff;
+    --white-standard-color_hover: #fff; 
+    --white_standard-color_text: #fff;
+    --white_standard-color_text-hover: #fff;
+    --white-dark-color: #F5F4FA;
+    --black-standard-color_text: #212121;
+    --blue-light-color: #2196F3;
+    --blue-light-color_text-hover: #2196F3;
+    --blue-color-button-modal: #188CE8;
+    --gray-dark-color_text: #757575;
+    --black-light-color: #2F303A;
+}
+/* Section 1 header */
+@import'header-console';
+/* Section 1 header end */
+/* Section 2 services */
+@import'services';
+/* Section 2 services end */
+/* Section 3 achievement */
+@import'achievement';
+/* Section 3 achievement end */
+/* Section 4 work */
+@import'work';
+/* Section 4 work end */
+/* Section 5 team */
+@import'team';
+/* Section 5 team end */
+/* Section 6 user */
+@import'user';
+/* Section 6 user end */
+/* Section 7 footer-info */
+@import'footer-info';
+/* Section 7 footer-info end */

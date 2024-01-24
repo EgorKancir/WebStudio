@@ -1,0 +1,100 @@
+%position-center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.work {
+    margin: 0;
+    padding-bottom: 94px;
+    &__content-box {
+        @extend %position-center;
+        flex-direction: column;
+        gap: 50px;
+    }
+    &__title {
+        color: var(--black-standard-color_text);
+        text-align: center;
+        font-family: Roboto;
+        font-size: 36px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: normal;
+        letter-spacing: 1.08px;
+    }
+    &__image-box {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        align-items: center;
+        gap: 30px;
+    }
+    &__box_hover {
+        width: 370px;
+        height: 294px;
+        position: relative;
+    }
+    &__image {
+        width: 370px;
+        height: 294px;
+        flex-shrink: 0;
+        position: absolute;
+        background-repeat: no-repeat;
+        background-size: cover;
+        top: 0px;
+        left: 0px;
+        z-index: 3;
+        overflow: hidden;
+        &::before {
+            content: "";
+            width: 370px;
+            height: 70px;
+            flex-shrink: 0;
+            background: rgba(47, 48, 58, 0.80);
+            @extend %position-center;
+            position: absolute;
+            transform: translateY(294px);
+            transition: transform 0.2s linear;
+            color: var(--white_standard-color_text-hover);
+            text-align: center;
+            font-family: Roboto;
+            font-size: 14px;
+            font-style: normal;
+            font-weight: 700;
+            line-height: normal;
+            letter-spacing: 0.42px;
+            text-transform: uppercase;
+        }
+    }
+    &__link-box:nth-child(1) > &__box_hover > &__image {
+        background-image: url("../image/raster-image/section4_work/img1.jpg");
+    }
+    &__link-box:nth-child(2) > &__box_hover > &__image {
+        background-image: url("../image/raster-image/section4_work/img2.jpg");
+    }
+    &__link-box:nth-child(3) > &__box_hover > &__image {
+        background-image: url("../image/raster-image/section4_work/img3.jpg");
+    }
+    @keyframes work-hover {
+        0% {
+            transform: translateY(224px);
+        }
+        33.3% {
+            transform: translateY(224px);
+        }
+        66.6% {
+            transform: translateY(294px);
+        }
+    }
+    &__link-box:nth-child(1) > &__box_hover > &__image::before {
+        content: "Десктопні додатки";
+        animation: work-hover 6s linear 0s infinite alternate backwards;
+    }
+    &__link-box:nth-child(2) > &__box_hover > &__image::before {
+        content: "Мобільні додатки";
+        animation: work-hover 6s linear 2s infinite alternate backwards;
+    }
+    &__link-box:nth-child(3) > &__box_hover > &__image::before {
+        content: "Дизайнерські рішення";
+        animation: work-hover 6s linear 4s infinite alternate backwards;
+    }
+}

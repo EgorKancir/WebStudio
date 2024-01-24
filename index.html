@@ -12,10 +12,10 @@
     <link rel="stylesheet" href="./src/css/home_reset.css">
     <link rel="stylesheet" href="./src/image/vector-image/icomoon-svg/style.css">
     <link rel="stylesheet" href="./src/image/vector-image/icomoon-fonts/style.css">
-    <link rel="stylesheet" href="./src/css/home_styles.css">
+    <link rel="stylesheet" href="./src/scss/main.css">
 </head>
 <body>
-    <!--Header-->
+    <!--Section 1 header-->
     <header class="header-console">
         <div class="container">
             <div class="header-console__content-box">
@@ -48,8 +48,9 @@
             </div>
         </div>
     </header>
-    <!--Main-->
+    <!-- Section 1 header end -->
     <main class="main">
+        <!-- Section 2 services -->
         <section class="services">
             <div class="container">
                 <div class="services__content-box">
@@ -68,19 +69,19 @@
                                     <div class="services__user-ingo-box">
                                         <label class="services__info-box" for="name">
                                             Ім'я
-                                            <input class="secrvices__info-form" type="text" name="name" id="name" required>
+                                            <input class="services__info-form" type="text" name="name" id="name" required>
                                         </label>
                                         <label class="services__info-box" for="tel">
                                             Телефон
-                                            <input class="secrvices__info-form" type="tel" name="tel" id="tel" required>
+                                            <input class="services__info-form" type="tel" name="tel" id="tel" required>
                                         </label>
                                         <label class="services__info-box" for="email">
                                             Пошта
-                                            <input class="secrvices__info-form" type="email" name="email" id="email" required>
+                                            <input class="services__info-form" type="email" name="email" id="email" required>
                                         </label>
                                         <label class="services__info-box" for="commit">
                                             Коментар
-                                            <textarea class="secrvices__commit-form" name="commit" id="commit" placeholder="Введіть текст"></textarea>
+                                            <textarea class="services__commit-form" name="commit" id="commit" placeholder="Введіть текст"></textarea>
                                         </label>
                                     </div>
                                     <label class="services__ifo-link-box" for="checkbox">
@@ -97,7 +98,8 @@
                 </div>
             </div>
         </section>
-        <!--Main box 1-->
+        <!-- Section 2 services end -->
+        <!-- Section 3 achievement -->
         <section class="achievement">
             <div class="container">
                 <div class="achievement__content-box">
@@ -134,7 +136,8 @@
                 </div>
             </div>
         </section>
-        <!-- Main box 2 -->
+        <!-- Section 3 achievement end -->
+        <!-- Section 4 work -->
         <section class="work">
             <div class="container">
                 <div class="work__content-box">
@@ -159,14 +162,15 @@
                 </div>
             </div>
         </section>
-        <!-- Main box 3 -->
+        <!-- Section 4 work end -->
+        <!-- Section 5 team -->
         <section class="team">
             <div class="container">
                 <div class="team__content-box">
                     <h2 class="team__title">Наша команда</h2>
                     <div class="team__info-box">
                         <div class="team__info-element">
-                            <img class="team__image" src="./src/image/raster-image/section4_team/worker1.jpg" alt="Ігорь">
+                            <img class="team__image" src="./src/image/raster-image/section5_team/worker1.jpg" alt="Ігорь">
                             <div class="team__info-container">
                                 <div class="team__text-box">
                                     <h2 class="team__name">Ігор Дем'яненко</h2>
@@ -189,7 +193,7 @@
                             </div>
                         </div>
                         <div class="team__info-element">
-                            <img class="team__image" src="./src/image/raster-image/section4_team/worker2.jpg" alt="Ольга">
+                            <img class="team__image" src="./src/image/raster-image/section5_team/worker2.jpg" alt="Ольга">
                             <div class="team__info-container">
                                 <div class="team__text-box" >
                                     <h2 class="team__name">Ольга Рєпіна</h2>
@@ -212,7 +216,7 @@
                             </div>
                         </div>
                         <div class="team__info-element">
-                            <img class="team__image" src="./src/image/raster-image/section4_team/worker3.jpg" alt="Микола"> 
+                            <img class="team__image" src="./src/image/raster-image/section5_team/worker3.jpg" alt="Микола"> 
                             <div class="team__info-container">
                                 <div class="team__text-box">
                                     <h2 class="team__name">Микола Тарасов</h2> 
@@ -235,7 +239,7 @@
                             </div>
                         </div>
                         <div class="team__info-element">
-                            <img class="team__image" src="./src/image/raster-image/section4_team/worker4.jpg" alt="Михайло">
+                            <img class="team__image" src="./src/image/raster-image/section5_team/worker4.jpg" alt="Михайло">
                             <div class="team__info-container">
                                 <div class="team__text-box">
                                     <h2 class="team__name">Михайло Єрмаков</h2>
@@ -261,7 +265,8 @@
                 </div>
             </div>
         </section>
-        <!-- Company -->
+        <!-- Section 5 team end -->
+        <!-- Section 6 user -->
         <section class="user">
             <div class="container">
                 <div class="user__content-box">
@@ -289,10 +294,10 @@
                 </div>
             </div>
         </section>
-        <!-- END Company -->
+        <!-- Section 6 user end -->
     </main>   
-    <!-- Footer box   -->
     <footer class="footer">
+        <!-- Section 7 footer-info -->
         <section class="footer-info">
             <div class="container">
                 <div class="footer-info__content-box">
@@ -331,7 +336,7 @@
                         <form class="footer-info__form-box">
                             <label class="footer-info__form-title" for="email-box">
                                 Підпишіться на розсилку
-                                <input class="footer-info__elmail-box" type="email" id="email-box" placeholder="E-mail" name="email-content">
+                                <input class="footer-info__elmail-box" type="email" id="email-box" placeholder="E-mail" name="email">
                             </label>
                             <button class="footer-info__form-btn" type="submit" name="submit">Підписатися<span class="icon-telegram"></span></button>
                         </form>
@@ -339,6 +344,7 @@
                 </div>
             </div>
         </section>
+        <!-- Section 7 footer-info end -->
     </footer>
     <script src="./src/js/main.js"></script>
 </body>

@@ -1,0 +1,53 @@
+body {
+    background: var(--white-standard-color);
+    margin:0;
+}
+.container {
+    width: 1170px;
+    padding: 0 15px;
+    margin: 0 auto;
+}
+a {
+    text-decoration: none;
+    color: inherit;
+}
+ul {
+    display: flex;
+    list-style: none;
+}
+:root {
+    --white-standard-color: #fff;
+    --white-standard-color_hover: #fff; 
+    --white_standard-color_text: #fff;
+    --white_standard-color_text-hover: #fff;
+    --white-dark-color: #F5F4FA;
+    --white-dark-color_text: #F5F4FA;
+    --black-standard-color_text: #212121;
+    --blue-light-color: #2196F3;
+    --blue-light-color_text-hover: #2196F3;
+    --gray-dark-color_text: #757575;
+    --black-light-color: #2F303A;
+    --gray-color_line: #ECECEC;
+    --gray-light-color_border: #EEE;
+    --gray-light-color_border-hover: #EEE;
+}
+/*Section 1 header-console */
+@import'header-console';
+/*Section 1 header-console end */
+.main {
+    padding: 94px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 50px;
+}
+/* Section 2 navigtion-console */
+@import'navigtion-console';
+/* Section 2 navigtion-console end */
+/* Section 3 projects */
+@import'projects';
+/* Section 3 projects end */
+/* Section 4 footer-info */
+@import'footer-info';
+/* Section 4 footer-info end */
