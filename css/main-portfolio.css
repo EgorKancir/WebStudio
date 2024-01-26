@@ -45,23 +45,19 @@ ul {
 
 /*Section 1 header-console */
 .contact, .header-console__navigation-container, .header-console__content-box {
+  display: flex;
   align-items: center;
 }
 
 .header-console {
-  display: flex;
-  justify-content: center;
-  align-items: center;
   margin: 0;
   padding: 24px 0 25px 0;
 }
 .header-console__content-box {
-  display: flex;
   justify-content: space-between;
   padding: 0;
 }
 .header-console__navigation-container {
-  display: flex;
   justify-content: center;
   gap: 93px;
 }
@@ -112,7 +108,6 @@ ul {
 }
 
 .contact {
-  display: flex;
   justify-content: center;
   gap: 50px;
 }

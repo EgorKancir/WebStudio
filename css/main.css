@@ -46,6 +46,7 @@ ul {
 
 /* Section 1 heade */
 .contact, .header-console__navigation-container, .header-console__content-box {
+  display: flex;
   align-items: center;
 }
 
@@ -57,12 +58,10 @@ ul {
   padding: 24px 0 25px 0;
 }
 .header-console__content-box {
-  display: flex;
   justify-content: space-between;
   padding: 0;
 }
 .header-console__navigation-container {
-  display: flex;
   justify-content: center;
   gap: 93px;
 }
@@ -113,7 +112,6 @@ ul {
 }
 
 .contact {
-  display: flex;
   justify-content: center;
   gap: 50px;
 }
