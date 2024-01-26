@@ -11,24 +11,16 @@
         flex-direction: column;
         gap: 50px;
     }
-    &__title {
-        color: var(--black-standard-color_text);
-        text-align: center;
-        font-family: Roboto;
-        font-size: 36px;
-        font-style: normal;
-        font-weight: 700;
-        line-height: normal;
-        letter-spacing: 1.08px;
-    }
-    &__image-box {
+    &__card-box {
         display: flex;
         flex-wrap: wrap;
         justify-content: space-between;
         align-items: center;
         gap: 30px;
     }
-    &__box_hover {
+}
+.work-card {
+    &__box--animation {
         width: 370px;
         height: 294px;
         position: relative;
@@ -56,7 +48,7 @@
             transition: transform 0.2s linear;
             color: var(--white_standard-color_text-hover);
             text-align: center;
-            font-family: Roboto;
+            font-family: $main-font;
             font-size: 14px;
             font-style: normal;
             font-weight: 700;
@@ -65,14 +57,14 @@
             text-transform: uppercase;
         }
     }
-    &__link-box:nth-child(1) > &__box_hover > &__image {
-        background-image: url("../image/raster-image/section4_work/img1.jpg");
+    &:nth-child(1) > &__box--animation > &__image {
+        background-image: url("../src/image/raster-image/section4_work/img1.jpg");
     }
-    &__link-box:nth-child(2) > &__box_hover > &__image {
-        background-image: url("../image/raster-image/section4_work/img2.jpg");
+    &:nth-child(2) > &__box--animation > &__image {
+        background-image: url("../src/image/raster-image/section4_work/img2.jpg");
     }
-    &__link-box:nth-child(3) > &__box_hover > &__image {
-        background-image: url("../image/raster-image/section4_work/img3.jpg");
+    &:nth-child(3) > &__box--animation > &__image {
+        background-image: url("../src/image/raster-image/section4_work/img3.jpg");
     }
     @keyframes work-hover {
         0% {
@@ -85,15 +77,15 @@
             transform: translateY(294px);
         }
     }
-    &__link-box:nth-child(1) > &__box_hover > &__image::before {
+    &:nth-child(1) > &__box--animation > &__image::before {
         content: "Десктопні додатки";
         animation: work-hover 6s linear 0s infinite alternate backwards;
     }
-    &__link-box:nth-child(2) > &__box_hover > &__image::before {
+    &:nth-child(2) > &__box--animation > &__image::before {
         content: "Мобільні додатки";
         animation: work-hover 6s linear 2s infinite alternate backwards;
     }
-    &__link-box:nth-child(3) > &__box_hover > &__image::before {
+    &:nth-child(3) > &__box--animation > &__image::before {
         content: "Дизайнерські рішення";
         animation: work-hover 6s linear 4s infinite alternate backwards;
     }

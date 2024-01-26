@@ -1,0 +1,24 @@
+.user {
+    margin: 0;
+    padding: 94px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    &__content-box {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: safe;
+        gap: 50px;
+    }
+}
+.company {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    &__link:hover {
+        transform: scale(1.2);
+        transition: all 0.2s linear;
+    }
+}

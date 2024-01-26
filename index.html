@@ -12,39 +12,33 @@
     <link rel="stylesheet" href="./src/css/home_reset.css">
     <link rel="stylesheet" href="./src/image/vector-image/icomoon-svg/style.css">
     <link rel="stylesheet" href="./src/image/vector-image/icomoon-fonts/style.css">
-    <link rel="stylesheet" href="./src/scss/main.css">
+    <link rel="stylesheet" href="./css/main.css">
 </head>
 <body>
     <!--Section 1 header-->
     <header class="header-console">
-        <div class="container">
-            <div class="header-console__content-box">
-                <div class="header-console__section">
-                    <a href="#" class="header-console__logo-link">
-                        <img class="header-console__logo" src="./src/image/vector-image/icomoon-svg/SVG/logo-webstudio.svg" alt="Logo WebStudio">
-                    </a>
-                    <nav class="header-console__navigation">
-                        <ul class="header-console__menu">
-                            <li class="header-console__option">
-                                <a class="header-console__option-link" href="./index.html">Студія</a>
-                            </li>
-                            <li class="header-console__option">
-                                <a class="header-console__option-link" href="./portfolio-page/portfolio.html">Портфоліо</a>
-                            </li>
-                            <li class="header-console__option">
-                                <a class="header-console__option-link" href="#">Контакти</a>
-                            </li>
-                        </ul>
-                    </nav>
-                </div>
-                <div class="header-console__information">
-                    <div class="header-console__info-box1">
-                        <a class="header-console__info" href="mailto:info@devstudio.com"><span class="icon-envelope"></span>info@devstudio.com</a>
-                    </div>
-                    <div class="header-console__info-box1">
-                        <a class="header-console__info" href="tel:+380961111111"><span class="icon-smartphone"></span>+38 096 111 11 11</a>
-                    </div>
-                </div>
+        <div class="container header-console__content-box">
+            <div class="header-console__navigation-container">
+                <a class="logo" href="#">
+                    <img class="logo__image" src="./src/image/vector-image/icomoon-svg/SVG/logo-webstudio.svg" alt="Logo WebStudio">
+                </a>
+                <nav class="navigation">
+                    <ul class="navigation__list">
+                        <li class="navigation__item">
+                            <a class="navigation__link" href="./index.html">Студія</a>
+                        </li>
+                        <li class="navigation__item">
+                            <a class="navigation__link" href="./portfolio-page/portfolio.html">Портфоліо</a>
+                        </li>
+                        <li class="navigation__item">
+                            <a class="navigation__link" href="#">Контакти</a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+            <div class="contact">
+                <a class="contact__link" href="mailto:info@devstudio.com"><span class="icon-envelope"></span>info@devstudio.com</a>
+                <a class="contact__link" href="tel:+380961111111"><span class="icon-smartphone"></span>+38 096 111 11 11</a>
             </div>
         </div>
     </header>
@@ -52,213 +46,205 @@
     <main class="main">
         <!-- Section 2 services -->
         <section class="services">
-            <div class="container">
-                <div class="services__content-box">
-                    <h2 class="services__title">
-                        Ефективні рішення для
-                        вашого бізнесу        
-                    </h2>
-                    <div class="services__button-box">
-                        <section class="modal hidden">
-                            <div class="flex">
-                                <h3 class="services__modal-title">Залиште свої дані, ми вам передзвонимо</h3>
-                                <button class="btn-close"><span class="icon-close"></span></button>
-                            </div>
-                            <form class="services__form">
-                                <div class="services__user-content-box">
-                                    <div class="services__user-ingo-box">
-                                        <label class="services__info-box" for="name">
-                                            Ім'я
-                                            <input class="services__info-form" type="text" name="name" id="name" required>
-                                        </label>
-                                        <label class="services__info-box" for="tel">
-                                            Телефон
-                                            <input class="services__info-form" type="tel" name="tel" id="tel" required>
-                                        </label>
-                                        <label class="services__info-box" for="email">
-                                            Пошта
-                                            <input class="services__info-form" type="email" name="email" id="email" required>
-                                        </label>
-                                        <label class="services__info-box" for="commit">
-                                            Коментар
-                                            <textarea class="services__commit-form" name="commit" id="commit" placeholder="Введіть текст"></textarea>
-                                        </label>
-                                    </div>
-                                    <label class="services__ifo-link-box" for="checkbox">
-                                        <input class="services__info-checkbox" type="checkbox" name="checkbox" id="checkbox" required>
-                                        Погоджуюся з розсилкою та приймаю <a class="services__info-link" href="#">Умови договору</a>
+            <div class="container services__content-box">
+                <h2 class="services__title">
+                    Ефективні рішення для
+                    вашого бізнесу        
+                </h2>
+                <div class="services__button-box">
+                    <section class="modal hidden">
+                        <div class="flex">
+                            <h3 class="modal__title">Залиште свої дані, ми вам передзвонимо</h3>
+                            <button class="btn-close"><span class="icon-close"></span></button>
+                        </div>
+                        <form class="modal-form">
+                            <div class="modal-form__content-box">
+                                <div class="modal-form__info-box">
+                                    <label class="modal-form__signature" for="name">
+                                        Ім'я
+                                        <input class="modal-form__input" type="text" name="name" id="name" required>
+                                    </label>
+                                    <label class="modal-form__signature" for="tel">
+                                        Телефон
+                                        <input class="modal-form__input" type="tel" name="tel" id="tel" required>
+                                    </label>
+                                    <label class="modal-form__signature" for="email">
+                                        Пошта
+                                        <input class="modal-form__input" type="email" name="email" id="email" required>
+                                    </label>
+                                    <label class="modal-form__signature" for="commit">
+                                        Коментар
+                                        <textarea class="modal-form__input-commit" name="commit" id="commit" placeholder="Введіть текст"></textarea>
                                     </label>
                                 </div>
-                                <button class="services__info-button" type="submit">Відправити</button>
-                            </form>
-                        </section>
-                        <div class="overlay hidden"></div>
-                        <button class="btn-open services__button">Замовити послугу</button>
-                    </div>
+                                <label class="modal-form__checkbox-text" for="checkbox">
+                                    <input class="modal-form__checkbox" type="checkbox" name="checkbox" id="checkbox" required>
+                                    Погоджуюся з розсилкою та приймаю <a class="modal-form__link" href="#">Умови договору</a>
+                                </label>
+                            </div>
+                            <button class="modal__button" type="submit">Відправити</button>
+                        </form>
+                    </section>
+                    <div class="overlay hidden"></div>
+                    <button class="btn-open services__button services__button--movement ">Замовити послугу</button>
                 </div>
             </div>
         </section>
         <!-- Section 2 services end -->
         <!-- Section 3 achievement -->
         <section class="achievement">
-            <div class="container">
-                <div class="achievement__content-box">
-                    <div class="achievement__element">
-                        <h2 class="achievement__element-title">УВАГА ДО ДЕТАЛЕЙ</h2>
-                        <p class="achievement__element-paragraf">
-                            Ідейні міркування, і навіть початок
-                            повсякденної роботи з формування 
-                            позиції.
-                        </p>
-                    </div>
-                    <div class="achievement__element">
-                        <h2 class="achievement__element-title">ПУНКТУАЛЬНІСТ</h2>
-                        <p class="achievement__element-paragraf">
-                            Завдання організації, особливо рамки
-                            і місце навчання кадрів тягне у себе.
-                        </p>
-                    </div>
-                    <div class="achievement__element">
-                        <h2 class="achievement__element-title">ПЛАНУВАННЯ</h2>
-                        <p class="achievement__element-paragraf">
-                            Так само консультація з широким
-                            активом значною мірою зумовлює.
-                        </p>
-                    </div>
-                    <div class="achievement__element">
-                        <h2 class="achievement__element-title">СУЧАСНІ ТЕХНОЛОГІЇ</h2>
-                        <p class="achievement__element-paragraf">
-                            Значимість цих проблем настільки
-                            очевидна, що реалізація планових
-                            завдань.
-                        </p>
-                    </div> 
+            <div class="container achievement__content-box">
+                <div class="achievement-card">
+                    <h2 class="achievement-card__title">УВАГА ДО ДЕТАЛЕЙ</h2>
+                    <p class="achievement-card__paragraf">
+                        Ідейні міркування, і навіть початок
+                        повсякденної роботи з формування 
+                        позиції.
+                    </p>
+                </div>
+                <div class="achievement-card">
+                    <h2 class="achievement-card__title">ПУНКТУАЛЬНІСТ</h2>
+                    <p class="achievement-card__paragraf">
+                        Завдання організації, особливо рамки
+                        і місце навчання кадрів тягне у себе.
+                    </p>
+                </div>
+                <div class="achievement-card">
+                    <h2 class="achievement-card__title">ПЛАНУВАННЯ</h2>
+                    <p class="achievement-card__paragraf">
+                        Так само консультація з широким
+                        активом значною мірою зумовлює.
+                    </p>
+                </div>
+                <div class="achievement-card">
+                    <h2 class="achievement-card__title">СУЧАСНІ ТЕХНОЛОГІЇ</h2>
+                    <p class="achievement-card__paragraf">
+                        Значимість цих проблем настільки
+                        очевидна, що реалізація планових
+                        завдань.
+                    </p>
                 </div>
             </div>
         </section>
         <!-- Section 3 achievement end -->
         <!-- Section 4 work -->
         <section class="work">
-            <div class="container">
-                <div class="work__content-box">
-                    <h2 class="work__title">Чим ми займаємося</h2>
-                    <div class="work__image-box">
-                        <a class="work__link-box" href="#">
-                            <div class="work__box_hover">
-                                <div class="work__image"></div>
-                            </div>
-                        </a>
-                        <a class="work__link-box" href="#">
-                            <div class="work__box_hover">
-                                <div class="work__image"></div>
-                            </div>
-                        </a>
-                        <a class="work__link-box" href="#">
-                            <div class="work__box_hover">
-                                <div class="work__image"></div>
-                            </div>
-                        </a>
-                    </div>
+            <div class="container work__content-box">
+                <h2 class="main-title">Чим ми займаємося</h2>
+                <div class="work__card-box">
+                    <a class="work-card" href="#">
+                        <div class="work-card__box--animation">
+                            <div class="work-card__image"></div>
+                        </div>
+                    </a>
+                    <a class="work-card" href="#">
+                        <div class="work-card__box--animation">
+                            <div class="work-card__image"></div>
+                        </div>
+                    </a>
+                    <a class="work-card" href="#">
+                        <div class="work-card__box--animation">
+                            <div class="work-card__image"></div>
+                        </div>
+                    </a>
                 </div>
             </div>
         </section>
         <!-- Section 4 work end -->
         <!-- Section 5 team -->
         <section class="team">
-            <div class="container">
-                <div class="team__content-box">
-                    <h2 class="team__title">Наша команда</h2>
-                    <div class="team__info-box">
-                        <div class="team__info-element">
-                            <img class="team__image" src="./src/image/raster-image/section5_team/worker1.jpg" alt="Ігорь">
-                            <div class="team__info-container">
-                                <div class="team__text-box">
-                                    <h2 class="team__name">Ігор Дем'яненко</h2>
-                                    <p class="team__paragraf">Product Designer</p>
-                                </div>
-                                <div class="team__social-networks-box">
-                                    <a class="team__link" href="#">
-                                        <span class="icon-instagram"><span class="path1"></span><span class="path2"></span><span class="path3"></span></span>
-                                    </a>
-                                    <a class="team__link" href="#">
-                                        <span class="icon-twitter"><span class="path1"></span><span class="path2"></span></span>
-                                    </a>
-                                    <a class="team__link" href="#">
-                                        <span class="icon-facebook"><span class="path1"></span><span class="path2"></span></span>
-                                    </a>
-                                    <a class="team__link" href="#">
-                                        <span class="icon-linkedin"><span class="path1"></span><span class="path2"></span></span>
-                                    </a>
-                                </div>
+            <div class="container team__content-box">
+                <h2 class="main-title">Наша команда</h2>
+                <div class="team__worker-box">
+                    <div class="worker">
+                        <img class="worker__image" src="./src/image/raster-image/section5_team/worker1.jpg" alt="Ігорь">
+                        <div class="worker__info-container">
+                            <div class="worker__text-box">
+                                <h2 class="worker__name">Ігор Дем'яненко</h2>
+                                <p class="worker__paragraf">Product Designer</p>
+                            </div>
+                            <div class="social-networks">
+                                <a class="social-networks__link" href="#">
+                                    <span class="icon-instagram"><span class="path1"></span><span class="path2"></span><span class="path3"></span></span>
+                                </a>
+                                <a class="social-networks__link" href="#">
+                                    <span class="icon-twitter"><span class="path1"></span><span class="path2"></span></span>
+                                </a>
+                                <a class="social-networks__link" href="#">
+                                    <span class="icon-facebook"><span class="path1"></span><span class="path2"></span></span>
+                                </a>
+                                <a class="social-networks__link" href="#">
+                                    <span class="icon-linkedin"><span class="path1"></span><span class="path2"></span></span>
+                                </a>
                             </div>
                         </div>
-                        <div class="team__info-element">
-                            <img class="team__image" src="./src/image/raster-image/section5_team/worker2.jpg" alt="Ольга">
-                            <div class="team__info-container">
-                                <div class="team__text-box" >
-                                    <h2 class="team__name">Ольга Рєпіна</h2>
-                                    <p class="team__paragraf">Frontend Developer</p>
-                                </div>
-                                <div class="team__social-networks-box">
-                                    <a class="team__link" href="#">
-                                        <span class="icon-instagram"><span class="path1"></span><span class="path2"></span><span class="path3"></span></span>
-                                    </a>
-                                    <a class="team__link" href="#">
-                                        <span class="icon-twitter"><span class="path1"></span><span class="path2"></span></span>
-                                    </a>
-                                    <a class="team__link" href="#">
-                                        <span class="icon-facebook"><span class="path1"></span><span class="path2"></span></span>
-                                    </a>
-                                    <a class="team__link" href="#">
-                                        <span class="icon-linkedin"><span class="path1"></span><span class="path2"></span></span>
-                                    </a>
-                                </div>
+                    </div>
+                    <div class="worker">
+                        <img class="worker__image" src="./src/image/raster-image/section5_team/worker2.jpg" alt="Ольга">
+                        <div class="worker__info-container">
+                            <div class="worker__text-box" >
+                                <h2 class="worker__name">Ольга Рєпіна</h2>
+                                <p class="worker__paragraf">Frontend Developer</p>
+                            </div>
+                            <div class="social-networks">
+                                <a class="social-networks__link" href="#">
+                                    <span class="icon-instagram"><span class="path1"></span><span class="path2"></span><span class="path3"></span></span>
+                                </a>
+                                <a class="social-networks__link" href="#">
+                                    <span class="icon-twitter"><span class="path1"></span><span class="path2"></span></span>
+                                </a>
+                                <a class="social-networks__link" href="#">
+                                    <span class="icon-facebook"><span class="path1"></span><span class="path2"></span></span>
+                                </a>
+                                <a class="social-networks__link" href="#">
+                                    <span class="icon-linkedin"><span class="path1"></span><span class="path2"></span></span>
+                                </a>
                             </div>
                         </div>
-                        <div class="team__info-element">
-                            <img class="team__image" src="./src/image/raster-image/section5_team/worker3.jpg" alt="Микола"> 
-                            <div class="team__info-container">
-                                <div class="team__text-box">
-                                    <h2 class="team__name">Микола Тарасов</h2> 
-                                    <p class="team__paragraf">Marketing</p>
-                                </div>
-                                <div class="team__social-networks-box">
-                                    <a class="team__link" href="#">
-                                        <span class="icon-instagram"><span class="path1"></span><span class="path2"></span><span class="path3"></span></span>
-                                    </a>
-                                    <a class="team__link" href="#">
-                                        <span class="icon-twitter"><span class="path1"></span><span class="path2"></span></span>
-                                    </a>
-                                    <a class="team__link" href="#">
-                                        <span class="icon-facebook"><span class="path1"></span><span class="path2"></span></span>
-                                    </a>
-                                    <a class="team__link" href="#">
-                                        <span class="icon-linkedin"><span class="path1"></span><span class="path2"></span></span>
-                                    </a>   
-                                </div>
+                    </div>
+                    <div class="worker">
+                        <img class="worker__image" src="./src/image/raster-image/section5_team/worker3.jpg" alt="Микола"> 
+                        <div class="worker__info-container">
+                            <div class="worker__text-box">
+                                <h2 class="worker__name">Микола Тарасов</h2> 
+                                <p class="worker__paragraf">Marketing</p>
+                            </div>
+                            <div class="social-networks">
+                                <a class="social-networks__link" href="#">
+                                    <span class="icon-instagram"><span class="path1"></span><span class="path2"></span><span class="path3"></span></span>
+                                </a>
+                                <a class="social-networks__link" href="#">
+                                    <span class="icon-twitter"><span class="path1"></span><span class="path2"></span></span>
+                                </a>
+                                <a class="social-networks__link" href="#">
+                                    <span class="icon-facebook"><span class="path1"></span><span class="path2"></span></span>
+                                </a>
+                                <a class="social-networks__link" href="#">
+                                    <span class="icon-linkedin"><span class="path1"></span><span class="path2"></span></span>
+                                </a>   
                             </div>
                         </div>
-                        <div class="team__info-element">
-                            <img class="team__image" src="./src/image/raster-image/section5_team/worker4.jpg" alt="Михайло">
-                            <div class="team__info-container">
-                                <div class="team__text-box">
-                                    <h2 class="team__name">Михайло Єрмаков</h2>
-                                    <p class="team__paragraf">UI Designer</p>
-                                </div>
-                                <div class="team__social-networks-box">
-                                    <a class="team__link" href="#">
-                                        <span class="icon-instagram"><span class="path1"></span><span class="path2"></span><span class="path3"></span></span>
-                                    </a>
-                                    <a class="team__link" href="#">
-                                        <span class="icon-twitter"><span class="path1"></span><span class="path2"></span></span>
-                                    </a>
-                                    <a class="team__link" href="#">
-                                        <span class="icon-facebook"><span class="path1"></span><span class="path2"></span></span>
-                                    </a>
-                                    <a class="team__link" href="#">
-                                        <span class="icon-linkedin"><span class="path1"></span><span class="path2"></span></span>
-                                    </a>
-                                </div>
+                    </div>
+                    <div class="worker">
+                        <img class="worker__image" src="./src/image/raster-image/section5_team/worker4.jpg" alt="Михайло">
+                        <div class="worker__info-container">
+                            <div class="worker__text-box">
+                                <h2 class="worker__name">Михайло Єрмаков</h2>
+                                <p class="worker__paragraf">UI Designer</p>
+                            </div>
+                            <div class="social-networks">
+                                <a class="social-networks__link" href="#">
+                                    <span class="icon-instagram"><span class="path1"></span><span class="path2"></span><span class="path3"></span></span>
+                                </a>
+                                <a class="social-networks__link" href="#">
+                                    <span class="icon-twitter"><span class="path1"></span><span class="path2"></span></span>
+                                </a>
+                                <a class="social-networks__link" href="#">
+                                    <span class="icon-facebook"><span class="path1"></span><span class="path2"></span></span>
+                                </a>
+                                <a class="social-networks__link" href="#">
+                                    <span class="icon-linkedin"><span class="path1"></span><span class="path2"></span></span>
+                                </a>
                             </div>
                         </div>
                     </div>
@@ -268,84 +254,78 @@
         <!-- Section 5 team end -->
         <!-- Section 6 user -->
         <section class="user">
-            <div class="container">
-                <div class="user__content-box">
-                    <h2 class="user__title">Постійні клієнти</h2>
-                    <div class="user__company-box">
-                        <a class="user__link" href="#">
-                            <span class="icon-logo-company1"></span>
-                        </a>
-                        <a class="user__link" href="#">
-                            <span class="icon-logo-company2"></span>
-                        </a>
-                        <a class="user__link" href="#">
-                            <span class="icon-logo-company3"></span>
-                        </a>
-                        <a class="user__link" href="#">
-                            <span class="icon-logo-company4"></span>
-                        </a>
-                        <a class="user__link" href="#">
-                            <span class="icon-logo-company5"></span>
-                        </a>
-                        <a class="user__link" href="#">
-                            <span class="icon-logo-company6"></span>
-                        </a>
-                    </div>
+            <div class="container user__content-box">
+                <h2 class="main-title">Постійні клієнти</h2>
+                <div class="company">
+                    <a class="company__link" href="#">
+                        <span class="icon-logo-company1"></span>
+                    </a>
+                    <a class="company__link" href="#">
+                        <span class="icon-logo-company2"></span>
+                    </a>
+                    <a class="company__link" href="#">
+                        <span class="icon-logo-company3"></span>
+                    </a>
+                    <a class="company__link" href="#">
+                        <span class="icon-logo-company4"></span>
+                    </a>
+                    <a class="company__link" href="#">
+                        <span class="icon-logo-company5"></span>
+                    </a>
+                    <a class="company__link" href="#">
+                        <span class="icon-logo-company6"></span>
+                    </a>
                 </div>
             </div>
         </section>
         <!-- Section 6 user end -->
     </main>   
-    <footer class="footer">
-        <!-- Section 7 footer-info -->
-        <section class="footer-info">
-            <div class="container">
-                <div class="footer-info__content-box">
-                    <div class="footer-info__about-as-section">
-                        <div class="footer-info__info-box">
-                            <img class="footer-info__logo" src="./src/image/vector-image/icomoon-svg/SVG/logo-webstudio-foot.svg" alt="WebStudio">
-                            <div class="footer-info__adress-box">
-                                <address class="footer-info__adress">
-                                    м. Київ, пр-т Лесі Українки, 26
-                                </address>
-                                <address class="footer-info__contact">
-                                    <a class="footer-info__link-contact" href="#">info@devstudio.com</a>
-                                    <a class="footer-info__link-contact" href="tel:+380961111111">+38 096 111 11 11</a>
-                                </address>
-                            </div>
-                        </div>
-                        <div class="footer-info__subscribe-box">
-                            <h3 class="footer-info__title-subscribe">приєднуйтесь</h3>
-                            <div class="footer-info__social-networks-box">
-                                <a class="footer-info__social-networks-link" href="#">
-                                    <span class="icon-instagram_foot"><span class="path1"></span><span class="path2"></span><span class="path3"></span></span>
-                                </a>
-                                <a class="footer-info__social-networks-link" href="#">
-                                    <span class="icon-twitter_foot"><span class="path1"></span><span class="path2"></span></span>
-                                </a>
-                                <a class="footer-info__social-networks-link" href="#">
-                                    <span class="icon-facebook_foot"><span class="path1"></span><span class="path2"></span></span>
-                                </a>
-                                <a class="footer-info__social-networks-link" href="#">
-                                    <span class="icon-linkedin_foot"><span class="path1"></span><span class="path2"></span></span>
-                                </a>
-                            </div>
-                        </div>
+    <!-- Section 7 footer-info -->
+    <footer class="footer-info">
+        <div class="container footer-info__content-box">
+            <div class="footer-info__about-as-section">
+                <div class="footer-info__info-box">
+                    <a class="logo" href="#">
+                        <img class="logo__image" src="./src/image/vector-image/icomoon-svg/SVG/logo-webstudio-foot.svg" alt="Logo WebStudio">
+                    </a>
+                    <div class="our-contacts">
+                        <address class="our-contacts__adress">
+                            м. Київ, пр-т Лесі Українки, 26
+                        </address>
+                        <address class="our-contacts__contact">
+                            <a class="our-contacts__link" href="#">info@devstudio.com</a>
+                            <a class="our-contacts__link" href="tel:+380961111111">+38 096 111 11 11</a>
+                        </address>
                     </div>
-                    <div class="footer-info__form-section">
-                        <form class="footer-info__form-box">
-                            <label class="footer-info__form-title" for="email-box">
-                                Підпишіться на розсилку
-                                <input class="footer-info__elmail-box" type="email" id="email-box" placeholder="E-mail" name="email">
-                            </label>
-                            <button class="footer-info__form-btn" type="submit" name="submit">Підписатися<span class="icon-telegram"></span></button>
-                        </form>
+                </div>
+                <div class="subscribe-box">
+                    <h3 class="subscribe-box__title">приєднуйтесь</h3>
+                    <div class="social-networks">
+                        <a class="social-networks__link social-networks__link--hover" href="#">
+                            <span class="icon-instagram_foot"><span class="path1"></span><span class="path2"></span><span class="path3"></span></span>
+                        </a>
+                        <a class="social-networks__link social-networks__link--hover" href="#">
+                            <span class="icon-twitter_foot"><span class="path1"></span><span class="path2"></span></span>
+                        </a>
+                        <a class="social-networks__link social-networks__link--hover" href="#">
+                            <span class="icon-facebook_foot"><span class="path1"></span><span class="path2"></span></span>
+                        </a>
+                        <a class="social-networks__link social-networks__link--hover" href="#">
+                            <span class="icon-linkedin_foot"><span class="path1"></span><span class="path2"></span></span>
+                        </a>
                     </div>
                 </div>
             </div>
-        </section>
-        <!-- Section 7 footer-info end -->
+            <form class="subscribe-form">
+                <label class="subscribe-form__title" for="email-box">
+                    Підпишіться на розсилку
+                    <input class="subscribe-form__input" type="email" id="email-box" placeholder="E-mail" name="email">
+                </label>
+                <button class="subscribe-form__button" type="submit" name="submit">Підписатися<span class="icon-telegram"></span></button>
+            </form>
+        </div>
     </footer>
+    <!-- Section 7 footer-info end -->
     <script src="./src/js/main.js"></script>
 </body>
 </html>

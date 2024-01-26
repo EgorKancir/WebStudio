@@ -1,6 +1,4 @@
-.projects {
-    margin: 0;
-    padding: 0;
+.projects-gallery {
     &__content-box {
         display: flex;
         justify-content: space-between;
@@ -8,7 +6,36 @@
         flex-wrap: wrap;
         gap: 26px;
     }
-    &__project-box {
+}
+.project {
+    &:nth-child(1) &__image {
+        background: url("../portfolio-page/src/image/raster-image/section3_projects/port-img_1.png"), lightgray 50% / cover no-repeat;
+    }
+    &:nth-child(2) &__image {
+        background: url("../portfolio-page/src/image/raster-image/section3_projects/port-img_2.png"), lightgray 0px -45.881px / 100% 182.783% no-repeat;
+    }
+    &:nth-child(3) &__image {
+        background: url("../portfolio-page/src/image/raster-image/section3_projects/port-img_3.png"), lightgray 50% / cover no-repeat;
+    }
+    &:nth-child(4) &__image {
+        background: url("../portfolio-page/src/image/raster-image/section3_projects/port-img_4.png"), lightgray 50% / cover no-repeat;
+    }
+    &:nth-child(5) &__image {
+        background: url("../portfolio-page/src/image/raster-image/section3_projects/port-img_5.png"), lightgray 50% / cover no-repeat;
+    }
+    &:nth-child(6) &__image {
+        background: url("../portfolio-page/src/image/raster-image/section3_projects/port-img_6.png"), lightgray 50% / cover no-repeat;
+    }
+    &:nth-child(7) &__image {
+        background: url("../portfolio-page/src/image/raster-image/section3_projects/port-img_7.png"), lightgray 50% / cover no-repeat;
+    }
+    &:nth-child(8) &__image {
+        background: url("../portfolio-page/src/image/raster-image/section3_projects/port-img_8.png"), lightgray 50% / cover no-repeat;
+    }
+    &:nth-child(9) &__image {
+        background: url("../portfolio-page/src/image/raster-image/section3_projects/port-img_9.png"), lightgray 50% / cover no-repeat;
+    }
+    &__container {
         width: 370px;
         flex-shrink: 0;
         border: 1px solid var(--gray-light-color_border);
@@ -25,6 +52,9 @@
             box-shadow: 1px 4px 6px 0px rgba(0, 0, 0, 0.16), 0px 4px 4px 0px rgba(0, 0, 0, 0.06), 0px 1px 1px 0px rgba(0, 0, 0, 0.12);
             transition: 0.2s;
         }
+    }
+    &__container:hover &__image &__overley {
+        transform: translateY(0);
     }
     &__image {
         width: 100%;
@@ -44,45 +74,15 @@
         transform: translateY(120%);
         transition: transform 0.5s ease;
     }
-    &__project-box:hover &__image &__overley {
-        transform: translateY(0);
-    }
     &__overley-paragraf {
         width: 322px;
         color: var(--white_standard-color_text);
-        font-family: Roboto;
+        font-family: $main-font;
         font-size: 18px;
         font-style: normal;
         font-weight: 400;
         line-height: 28px;
         letter-spacing: 0.54px;
-    }
-    &__link:nth-child(1) &__image {
-        background: url("../image/raster-image/section3_projects/port-img_1.png"), lightgray 50% / cover no-repeat;
-    }
-    &__link:nth-child(2) &__image {
-        background: url("../image/raster-image/section3_projects/port-img_2.png"), lightgray 0px -45.881px / 100% 182.783% no-repeat;
-    }
-    &__link:nth-child(3) &__image {
-        background: url("../image/raster-image/section3_projects/port-img_3.png"), lightgray 50% / cover no-repeat;
-    }
-    &__link:nth-child(4) &__image {
-        background: url("../image/raster-image/section3_projects/port-img_4.png"), lightgray 50% / cover no-repeat;
-    }
-    &__link:nth-child(5) &__image {
-        background: url("../image/raster-image/section3_projects/port-img_5.png"), lightgray 50% / cover no-repeat;
-    }
-    &__link:nth-child(6) &__image {
-        background: url("../image/raster-image/section3_projects/port-img_6.png"), lightgray 50% / cover no-repeat;
-    }
-    &__link:nth-child(7) &__image {
-        background: url("../image/raster-image/section3_projects/port-img_7.png"), lightgray 50% / cover no-repeat;
-    }
-    &__link:nth-child(8) &__image {
-        background: url("../image/raster-image/section3_projects/port-img_8.png"), lightgray 50% / cover no-repeat;
-    }
-    &__link:nth-child(9) &__image {
-        background: url("../image/raster-image/section3_projects/port-img_9.png"), lightgray 50% / cover no-repeat;
     }
     &__text-box {
         display: flex;
@@ -94,7 +94,7 @@
     }
     &__title {
         color: var(--black-standard-color_text);
-        font-family: Roboto;
+        font-family: $main-font;
         font-size: 18px;
         font-style: normal;
         font-weight: 700;
@@ -103,7 +103,7 @@
     }
     &__paragraf {
         color: var(--gray-dark-color_text);
-        font-family: Roboto;
+        font-family: $main-font;
         font-size: 16px;
         font-style: normal;
         font-weight: 400;

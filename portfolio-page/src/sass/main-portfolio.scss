@@ -15,24 +15,16 @@ ul {
     display: flex;
     list-style: none;
 }
-:root {
-    --white-standard-color: #fff;
-    --white-standard-color_hover: #fff; 
-    --white_standard-color_text: #fff;
-    --white_standard-color_text-hover: #fff;
-    --white-dark-color: #F5F4FA;
-    --white-dark-color_text: #F5F4FA;
-    --black-standard-color_text: #212121;
-    --blue-light-color: #2196F3;
-    --blue-light-color_text-hover: #2196F3;
-    --gray-dark-color_text: #757575;
-    --black-light-color: #2F303A;
-    --gray-color_line: #ECECEC;
-    --gray-light-color_border: #EEE;
-    --gray-light-color_border-hover: #EEE;
+@import'utils/variables';
+.logo {
+    &__image {
+        width: 145px;
+        height: 31px;
+        flex-shrink: 0;
+    }
 }
 /*Section 1 header-console */
-@import'header-console';
+@import'components/header-console';
 /*Section 1 header-console end */
 .main {
     padding: 94px 0;
@@ -43,11 +35,17 @@ ul {
     gap: 50px;
 }
 /* Section 2 navigtion-console */
-@import'navigtion-console';
+@import'components/console';
 /* Section 2 navigtion-console end */
 /* Section 3 projects */
-@import'projects';
+@import'components/projects-gallery';
 /* Section 3 projects end */
+.social-networks {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10px;
+}
 /* Section 4 footer-info */
-@import'footer-info';
+@import'components/footer-info';
 /* Section 4 footer-info end */

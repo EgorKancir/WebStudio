@@ -1,0 +1,62 @@
+body {
+    background: var(--white-standard-color);
+    margin:0;
+}
+.container {
+    width: 1170px;
+    padding: 0 15px;
+    margin: 0 auto;
+}
+a {
+    text-decoration: none;
+    color: inherit;
+}
+ul {
+    display: flex;
+    list-style: none;
+}
+@import'utils/variables';
+.logo {
+    &__image {
+        width: 145px;
+        height: 31px;
+        flex-shrink: 0;
+    }
+}
+/* Section 1 heade */
+@import'components/header-console';
+/* Section 1 header end */
+/* Section 2 services */
+@import'components/services';
+/* Section 2 services end */
+.main-title {
+    color: var(--black-standard-color_text);
+    text-align: center;
+    font-family: $main-font;
+    font-size: 36px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    letter-spacing: 1.08px;
+}
+/* Section 3 achievement */
+@import'components/achievement';
+/* Section 3 achievement end */
+/* Section 4 work */
+@import'components/work';
+/* Section 4 work end */
+/* Section 5 team */
+@import'components/team';
+/* Section 5 team end */
+.social-networks {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10px;
+}
+/* Section 6 user */
+@import'components/user';
+/* Section 6 user end */
+/* Section 7 footer-info */
+@import'components/footer-info';
+/* Section 7 footer-info end */
