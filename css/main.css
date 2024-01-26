@@ -30,6 +30,7 @@ ul {
   --black-standard-color_text: #212121;
   --blue-light-color: #2196F3;
   --blue-light-color_text-hover: #2196F3;
+  --blue-color-button-modal: #188CE8;
   --gray-dark-color_text: #757575;
   --black-light-color: #2F303A;
   --gray-color_line: #ECECEC;
@@ -309,7 +310,7 @@ ul {
 .modal-form__signature:nth-child(2) > .modal-form__input:focus-visible {
   background-image: url("../src/image/vector-image/icomoon-svg/SVG/phone-color.svg");
 }
-.modal-form__info-box:nth-child(3) > .modal-form__info-form {
+.modal-form__signature:nth-child(3) > .modal-form__input {
   background-image: url("../src/image/vector-image/icomoon-svg/SVG/email.svg");
 }
 .modal-form__signature:nth-child(3) > .modal-form__input:focus-visible {
