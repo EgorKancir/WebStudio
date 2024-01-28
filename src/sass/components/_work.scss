@@ -1,7 +1,5 @@
 %position-center {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    @extend %position-center;
 }
 .work {
     margin: 0;
@@ -12,10 +10,8 @@
         gap: 50px;
     }
     &__card-box {
-        display: flex;
+        @include flex(space-between, center);
         flex-wrap: wrap;
-        justify-content: space-between;
-        align-items: center;
         gap: 30px;
     }
 }

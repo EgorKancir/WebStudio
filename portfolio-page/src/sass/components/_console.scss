@@ -1,20 +1,14 @@
 .console {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    @extend %position-center;
     margin: 0;
     padding: 0;
     &__content-box {
-        display: flex;
-        justify-content: center;
-        align-items: center;
+        @extend %position-center;
     }
 }
 .navigtion-console {
     &__list {
-        display: flex;
-        justify-content: center;
-        align-items: center;
+        @extend %position-center;
         gap: 8px;
     }
     &__link {

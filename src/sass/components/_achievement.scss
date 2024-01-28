@@ -2,15 +2,12 @@
     margin: 0;
     padding: 94px 0;
     &__content-box {
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: space-between;
+        @include flex(space-between,  normal);
     }
 }
 .achievement-card {
-    display: flex;
+    @include flex(normal,  flex-start);
     flex-direction: column;
-    align-items: flex-start;
     gap: 10px;
     &::before {
         content: "";

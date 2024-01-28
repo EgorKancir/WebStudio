@@ -3,10 +3,8 @@
     padding: 94px 0;
     background: var(--white-dark-color);
     &__content-box {
-        display: flex;
+        @include flex(center, safe);
         flex-direction: column;
-        justify-content: center;
-        align-items: safe;
         gap: 50px;
     }
     &__worker-box {
@@ -21,10 +19,8 @@
     box-sizing: content-box;
     width: 270px;
     flex-shrink: 0;
-    display: flex;
+    @extend %position-center;
     flex-direction: column;
-    justify-content: center;
-    align-items: center;
     gap: 30px;
     padding-bottom: 30px;
     border-radius: 0px 0px 4px 4px;
@@ -40,17 +36,13 @@
         flex-shrink: 0;
     }
     &__info-container {
-        display: flex;
+        @include flex(space-between, center);
         flex-direction: column;
-        justify-content: space-between;
-        align-items: center;
         gap: 16px;
     }
     &__text-box {
-        display: flex;
+        @extend %position-center;
         flex-direction: column;
-        justify-content: center;
-        align-items: center;
         gap: 10px;
     }
     &__name {

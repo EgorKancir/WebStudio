@@ -3,31 +3,23 @@
     padding: 60px 0;
     background: var(--black-light-color);
     &__content-box {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
+        @include flex(space-between, center);
     }
     &__about-as-section {
-        display: flex;
-        justify-content: start;
-        align-items: center;
+        @include flex(start, center);
         gap: 70px;
         margin: 0;
         padding: 0;
     }
     &__info-box {
-        display: flex;
+        @include flex(center, start);
         flex-direction: column;
-        justify-content: center;
-        align-items: start;
         gap: 20px;
     }
 }
 .our-contacts {
-    display: flex;
+    @include flex(center, start);
     flex-direction: column;
-    justify-content: center;
-    align-items: start;
     gap: 9px;
     &__adress {
         color: var(--white_standard-color_text);
@@ -39,10 +31,8 @@
         letter-spacing: 0.42px;
     }
     &__contact {
-        display: flex;
+        @include flex(center, start);
         flex-direction: column;
-        justify-content: center;
-        align-items: start;
         gap: 9px;
     }
     &__link {
@@ -61,10 +51,8 @@
     }
 }
 .subscribe-box {
-    display: flex;
+    @include flex(center, start);
     flex-direction: column;
-    align-items: start;
-    justify-content: center;
     gap: 20px;
     &__title {
         color: var(--white_standard-color_text);
@@ -83,15 +71,11 @@
     transition: all 0.2s linear;
 }
 .subscribe-form {
-    display: flex;
-    justify-content: start;
-    align-items: end;
+    @include flex(start, end);
     gap: 12px;
     &__title {
-        display: flex;
+        @include flex(center, start);
         flex-direction: column;
-        justify-content: center;
-        align-items: start;
         gap: 20px;
         color: var(--white_standard-color_text);
         font-family: $main-font;

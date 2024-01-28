@@ -16,3 +16,13 @@
     --gray-light-color_border-hover: #EEE;
 }
 $main-font: Roboto;
+%position-center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+@mixin flex($justify, $align) {
+    display: flex;
+    justify-content: $justify;
+    align-items: $align;
+}

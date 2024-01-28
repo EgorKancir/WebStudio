@@ -1,18 +1,13 @@
-%position_align-items-center {
-    display: flex;
-    align-items: center;
-}
 .header-console {
+    @include flex(center, center);
     margin: 0;
     padding: 24px 0 25px 0;
     &__content-box {
-        @extend %position_align-items-center;
-        justify-content: space-between;
+        @include flex(space-between, center);
         padding: 0;
     }
     &__navigation-container {
-        @extend %position_align-items-center;
-        justify-content: center;
+        @include flex(center, center);
         gap: 93px;
     }
 }
@@ -65,8 +60,7 @@
     }
 }
 .contact {
-    @extend %position_align-items-center;
-    justify-content: center;
+    @include flex(center, center);
     gap: 50px;
     &__link {
         color: var(--gray-dark-color_text);

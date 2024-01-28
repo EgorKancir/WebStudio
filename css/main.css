@@ -16,7 +16,6 @@ a {
 }
 
 ul {
-  display: flex;
   list-style: none;
 }
 
@@ -38,6 +37,12 @@ ul {
   --gray-light-color_border-hover: #EEE;
 }
 
+.user, .worker__text-box, .worker, .work-card__image::before, .work__content-box, .btn-close, .modal-form__checkbox-text, .modal-form__info-box, .modal-form__content-box, .modal-form, .modal .flex, .services__button-box, .services__content-box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 .logo__image {
   width: 145px;
   height: 31px;
@@ -45,11 +50,6 @@ ul {
 }
 
 /* Section 1 heade */
-.contact, .header-console__navigation-container, .header-console__content-box {
-  display: flex;
-  align-items: center;
-}
-
 .header-console {
   display: flex;
   justify-content: center;
@@ -58,11 +58,15 @@ ul {
   padding: 24px 0 25px 0;
 }
 .header-console__content-box {
+  display: flex;
   justify-content: space-between;
+  align-items: center;
   padding: 0;
 }
 .header-console__navigation-container {
+  display: flex;
   justify-content: center;
+  align-items: center;
   gap: 93px;
 }
 
@@ -112,7 +116,9 @@ ul {
 }
 
 .contact {
+  display: flex;
   justify-content: center;
+  align-items: center;
   gap: 50px;
 }
 .contact__link {
@@ -134,12 +140,6 @@ ul {
 
 /* Section 1 header end */
 /* Section 2 services */
-.work-card__image::before, .work__content-box, .btn-close, .modal-form__checkbox-text, .modal-form__info-box, .modal-form__content-box, .modal-form, .modal .flex, .services__button-box, .services__content-box {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
 .services {
   margin: 0;
   padding: 200px 0px;
@@ -269,9 +269,9 @@ ul {
 }
 .modal-form__signature {
   display: flex;
-  flex-direction: column;
   justify-content: center;
   align-items: start;
+  flex-direction: column;
   gap: 4px;
   color: var(--gray-dark-color_text);
   font-family: Roboto;
@@ -413,14 +413,15 @@ ul {
 }
 .achievement__content-box {
   display: flex;
-  flex-wrap: wrap;
   justify-content: space-between;
+  align-items: normal;
 }
 
 .achievement-card {
   display: flex;
-  flex-direction: column;
+  justify-content: normal;
   align-items: flex-start;
+  flex-direction: column;
   gap: 10px;
 }
 .achievement-card::before {
@@ -470,12 +471,6 @@ ul {
 
 /* Section 3 achievement end */
 /* Section 4 work */
-.work-card__image::before, .work__content-box, .services__content-box, .services__button-box, .modal .flex, .modal-form, .modal-form__content-box, .modal-form__info-box, .modal-form__checkbox-text, .btn-close {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
 .work {
   margin: 0;
   padding-bottom: 94px;
@@ -486,9 +481,9 @@ ul {
 }
 .work__card-box {
   display: flex;
-  flex-wrap: wrap;
   justify-content: space-between;
   align-items: center;
+  flex-wrap: wrap;
   gap: 30px;
 }
 
@@ -570,9 +565,9 @@ ul {
 }
 .team__content-box {
   display: flex;
-  flex-direction: column;
   justify-content: center;
   align-items: safe;
+  flex-direction: column;
   gap: 50px;
 }
 .team__worker-box {
@@ -587,10 +582,7 @@ ul {
   box-sizing: content-box;
   width: 270px;
   flex-shrink: 0;
-  display: flex;
   flex-direction: column;
-  justify-content: center;
-  align-items: center;
   gap: 30px;
   padding-bottom: 30px;
   border-radius: 0px 0px 4px 4px;
@@ -608,16 +600,13 @@ ul {
 }
 .worker__info-container {
   display: flex;
-  flex-direction: column;
   justify-content: space-between;
   align-items: center;
+  flex-direction: column;
   gap: 16px;
 }
 .worker__text-box {
-  display: flex;
   flex-direction: column;
-  justify-content: center;
-  align-items: center;
   gap: 10px;
 }
 .worker__name {
@@ -653,23 +642,20 @@ ul {
 .user {
   margin: 0;
   padding: 94px 0;
-  display: flex;
-  justify-content: center;
-  align-items: center;
 }
 .user__content-box {
   display: flex;
-  flex-direction: column;
   justify-content: center;
   align-items: safe;
+  flex-direction: column;
   gap: 50px;
 }
 
 .company {
   display: flex;
-  flex-wrap: wrap;
   justify-content: space-between;
   align-items: center;
+  flex-wrap: wrap;
 }
 .company__link:hover {
   transform: scale(1.2);
@@ -698,17 +684,17 @@ ul {
 }
 .footer-info__info-box {
   display: flex;
-  flex-direction: column;
   justify-content: center;
   align-items: start;
+  flex-direction: column;
   gap: 20px;
 }
 
 .our-contacts {
   display: flex;
-  flex-direction: column;
   justify-content: center;
   align-items: start;
+  flex-direction: column;
   gap: 9px;
 }
 .our-contacts__adress {
@@ -722,9 +708,9 @@ ul {
 }
 .our-contacts__contact {
   display: flex;
-  flex-direction: column;
   justify-content: center;
   align-items: start;
+  flex-direction: column;
   gap: 9px;
 }
 .our-contacts__link {
@@ -744,9 +730,9 @@ ul {
 
 .subscribe-box {
   display: flex;
-  flex-direction: column;
-  align-items: start;
   justify-content: center;
+  align-items: start;
+  flex-direction: column;
   gap: 20px;
 }
 .subscribe-box__title {
@@ -774,9 +760,9 @@ ul {
 }
 .subscribe-form__title {
   display: flex;
-  flex-direction: column;
   justify-content: center;
   align-items: start;
+  flex-direction: column;
   gap: 20px;
   color: var(--white_standard-color_text);
   font-family: Roboto;
