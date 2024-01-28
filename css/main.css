@@ -37,7 +37,7 @@ ul {
   --gray-light-color_border-hover: #EEE;
 }
 
-.user, .worker__text-box, .worker, .work-card__image::before, .work__content-box, .btn-close, .modal-form__checkbox-text, .modal-form__info-box, .modal-form__content-box, .modal-form, .modal .flex, .services__button-box, .services__content-box {
+.subscribe-form__button, .user, .worker__text-box, .worker, .work-card__image::before, .work__content-box, .btn-close, .modal-form__checkbox-text, .modal-form__info-box, .modal-form__content-box, .modal-form, .modal .flex, .services__button-box, .services__content-box {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -803,9 +803,6 @@ ul {
   font-weight: 700;
   line-height: 30px;
   letter-spacing: 0.96px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
   gap: 10px;
   outline: none;
   border: none;

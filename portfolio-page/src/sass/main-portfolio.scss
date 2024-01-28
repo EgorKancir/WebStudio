@@ -14,7 +14,7 @@ a {
 ul {
     list-style: none;
 }
-@import'utils/variables';
+@import'utils/variables', 'utils/placeholders', 'utils/mixins';
 .logo {
     &__image {
         width: 145px;

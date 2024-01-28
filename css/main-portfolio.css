@@ -36,7 +36,13 @@ ul {
   --gray-light-color_border-hover: #EEE;
 }
 
-.project__overley, .navigtion-console__list, .console__content-box, .console, .main {
+.subscribe-form__button, .project__overley, .navigtion-console__list, .console__content-box, .console, .main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.subscribe-form__button, .project__overley, .navigtion-console__list, .console__content-box, .console, .main {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -431,9 +437,6 @@ ul {
   font-weight: 700;
   line-height: 30px;
   letter-spacing: 0.96px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
   gap: 10px;
   outline: none;
   border: none;

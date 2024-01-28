@@ -116,9 +116,7 @@
         font-weight: 700;
         line-height: 30px;
         letter-spacing: 0.96px;
-        display: flex;
-        justify-content: center;
-        align-items: center;
+        @extend %position-center;
         gap: 10px;
         outline: none;
         border: none;
