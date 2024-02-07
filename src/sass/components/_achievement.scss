@@ -54,3 +54,25 @@
         letter-spacing: 0.42px;
     }
 }
+
+// Tablet
+@media (max-width: 1024px) {
+    .achievement {
+        padding: 60px 0;
+        &__content-box {
+            @include flex(center,  normal);
+            flex-wrap: wrap;
+            gap: 30px;
+        }
+    }
+    .achievement-card {
+        &::before {
+            content: "";
+            width: 354px;
+            height: 120px;
+        }
+        &__paragraf {
+            width: 354px;
+        }
+    }
+}

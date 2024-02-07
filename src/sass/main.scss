@@ -57,3 +57,18 @@ ul {
 /* Section 7 footer-info */
 @import'components/footer-info';
 /* Section 7 footer-info end */
+@media (max-width: 1024px) {
+    .container {
+        width: 738px;
+    }
+    .logo {
+        &__image {
+            width: 134px;
+            height: 28px;
+            flex-shrink: 0;
+        }
+    }
+    .main-title {
+        font-size: 28px;
+    }
+}

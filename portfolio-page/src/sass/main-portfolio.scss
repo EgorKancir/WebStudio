@@ -44,3 +44,21 @@ ul {
 /* Section 4 footer-info */
 @import'components/footer-info';
 /* Section 4 footer-info end */
+@media (max-width: 1024px) {
+    .container {
+        width: 738px;
+    }
+    .logo {
+        &__image {
+            width: 134px;
+            height: 28px;
+            flex-shrink: 0;
+        }
+    }
+    .main {
+        padding: 60px 0;
+        @extend %position-center;
+        flex-direction: column;
+        gap: 30px;
+    }
+}

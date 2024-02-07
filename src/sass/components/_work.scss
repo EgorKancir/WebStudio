@@ -86,3 +86,9 @@
         animation: work-hover 6s linear 4s infinite alternate backwards;
     }
 }
+// Tablet
+@media (max-width: 1024px) {
+    .work {
+        display: none;
+    }
+}

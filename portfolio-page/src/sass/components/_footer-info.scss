@@ -127,3 +127,46 @@
         }
     }
 }
+@media (max-width: 1024px) {
+    .footer-info {
+        &__content-box {
+            @include flex(center, center);
+            flex-direction: column;
+            gap: 60px;
+        }
+        &__about-as-section {
+            @include flex(space-between, start);
+            gap: 165px;
+        }
+        &__info-box {
+            @include flex(center, center);
+        }
+    }
+    .our-contacts {
+        @include flex(center, center);
+        gap: 8px;
+        &__contact {
+            @include flex(center, center);
+            gap: 8px;
+        }
+    }
+    .subscribe-box {
+        padding-top: 5px;
+        @include flex(center, center);
+    }
+    .subscribe-form {
+        @include flex(center, center);
+        flex-direction: column;
+        gap: 20px;
+        &__title {
+            @include flex(center, center);
+        }
+        &__input {
+            width: 450px;
+            height: 50px;
+        }
+        &__button {
+            gap: 12px;
+        }
+    }
+}

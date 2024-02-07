@@ -66,3 +66,19 @@
         letter-spacing: 0.48px;
     }
 }
+// Tablet
+@media (max-width: 1024px) {
+    .team {
+        padding: 60px 0;
+        &__content-box {
+            gap: 30px;
+        }
+    }
+    .worker {
+        width: 354px;
+        &__image {
+            width: 354px;
+            height: 374px;
+        }
+    }
+}

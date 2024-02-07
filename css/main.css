@@ -138,6 +138,24 @@ ul {
   color: var(--blue-light-color_text-hover);
 }
 
+@media (max-width: 1024px) {
+  .header-console {
+    padding: 26px 0;
+  }
+  .header-console__navigation-container {
+    gap: 88px;
+  }
+  .contact {
+    display: flex;
+    justify-content: center;
+    align-items: start;
+    flex-direction: column;
+    gap: 10px;
+  }
+  .contact__link {
+    font-size: 12px;
+  }
+}
 /* Section 1 header end */
 /* Section 2 services */
 .services {
@@ -211,8 +229,7 @@ ul {
   flex-direction: column;
   justify-content: center;
   gap: 12px;
-  width: 528px;
-  height: 581px;
+  padding: 40px;
   flex-shrink: 0;
   position: fixed;
   z-index: 20;
@@ -334,7 +351,7 @@ ul {
   color: var(--black-standard-color_text);
 }
 .modal-form__checkbox-text {
-  gap: 7px;
+  gap: 8px;
   color: var(--gray-dark-color_text);
   font-family: Roboto;
   font-size: 14px;
@@ -394,6 +411,36 @@ ul {
   z-index: 17;
 }
 
+@media (max-width: 1024px) {
+  .services {
+    padding: 118px 0px;
+  }
+  .services__title {
+    width: 360px;
+    font-size: 26px;
+  }
+  .services__button {
+    padding: 10px 24px;
+    flex-shrink: 0;
+  }
+  .modal__title {
+    width: 370px;
+  }
+  .modal-form__input {
+    width: 370px;
+    height: 40px;
+  }
+  .modal-form__input-commit {
+    width: 370px;
+    height: 120px;
+  }
+  .modal-form__checkbox-text {
+    font-size: 12px;
+  }
+  .modal-form__link {
+    font-size: 12px;
+  }
+}
 /* Section 2 services end */
 .main-title {
   color: var(--black-standard-color_text);
@@ -469,6 +516,26 @@ ul {
   letter-spacing: 0.42px;
 }
 
+@media (max-width: 1024px) {
+  .achievement {
+    padding: 60px 0;
+  }
+  .achievement__content-box {
+    display: flex;
+    justify-content: center;
+    align-items: normal;
+    flex-wrap: wrap;
+    gap: 30px;
+  }
+  .achievement-card::before {
+    content: "";
+    width: 354px;
+    height: 120px;
+  }
+  .achievement-card__paragraf {
+    width: 354px;
+  }
+}
 /* Section 3 achievement end */
 /* Section 4 work */
 .work {
@@ -556,6 +623,11 @@ ul {
   animation: work-hover 6s linear 4s infinite alternate backwards;
 }
 
+@media (max-width: 1024px) {
+  .work {
+    display: none;
+  }
+}
 /* Section 4 work end */
 /* Section 5 team */
 .team {
@@ -630,6 +702,21 @@ ul {
   letter-spacing: 0.48px;
 }
 
+@media (max-width: 1024px) {
+  .team {
+    padding: 60px 0;
+  }
+  .team__content-box {
+    gap: 30px;
+  }
+  .worker {
+    width: 354px;
+  }
+  .worker__image {
+    width: 354px;
+    height: 374px;
+  }
+}
 /* Section 5 team end */
 .social-networks {
   display: flex;
@@ -662,6 +749,21 @@ ul {
   transition: all 0.2s linear;
 }
 
+@media (max-width: 1024px) {
+  .user {
+    padding: 60px 0;
+  }
+  .user__content-box {
+    gap: 30px;
+  }
+  .company {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 30px;
+  }
+}
 /* Section 6 user end */
 /* Section 7 footer-info */
 .footer-info {
@@ -813,4 +915,74 @@ ul {
   transition: all 0.2s linear;
 }
 
+@media (max-width: 1024px) {
+  .footer-info__content-box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 60px;
+  }
+  .footer-info__about-as-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: start;
+    gap: 165px;
+  }
+  .footer-info__info-box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .our-contacts {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+  }
+  .our-contacts__contact {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+  }
+  .subscribe-box {
+    padding-top: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .subscribe-form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 20px;
+  }
+  .subscribe-form__title {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .subscribe-form__input {
+    width: 450px;
+    height: 50px;
+  }
+  .subscribe-form__button {
+    gap: 12px;
+  }
+}
 /* Section 7 footer-info end */
+@media (max-width: 1024px) {
+  .container {
+    width: 738px;
+  }
+  .logo__image {
+    width: 134px;
+    height: 28px;
+    flex-shrink: 0;
+  }
+  .main-title {
+    font-size: 28px;
+  }
+}

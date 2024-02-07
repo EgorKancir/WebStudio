@@ -143,6 +143,24 @@ ul {
   color: var(--blue-light-color_text-hover);
 }
 
+@media (max-width: 1024px) {
+  .header-console {
+    padding: 26px 0;
+  }
+  .header-console__navigation-container {
+    gap: 88px;
+  }
+  .contact {
+    display: flex;
+    justify-content: center;
+    align-items: start;
+    flex-direction: column;
+    gap: 10px;
+  }
+  .contact__link {
+    font-size: 12px;
+  }
+}
 /*Section 1 header-console end */
 .main {
   padding: 94px 0;
@@ -186,7 +204,7 @@ ul {
   justify-content: space-between;
   align-items: center;
   flex-wrap: wrap;
-  gap: 26px;
+  gap: 30px;
 }
 
 .project:nth-child(1) .project__image {
@@ -217,11 +235,11 @@ ul {
   background: url("../portfolio-page/src/image/raster-image/section3_projects/port-img_9.png"), lightgray 50%/cover no-repeat;
 }
 .project__container {
-  width: 370px;
+  width: 368px;
   flex-shrink: 0;
   border: 1px solid var(--gray-light-color_border);
   background: var(--white-standard-color);
-  padding-bottom: 20px;
+  padding-bottom: 18px;
   display: flex;
   justify-content: start;
   align-items: start;
@@ -289,6 +307,14 @@ ul {
   letter-spacing: 0.48px;
 }
 
+@media (max-width: 1024px) {
+  .project__container {
+    width: 352px;
+  }
+  .project__overley-paragraf {
+    width: 306px;
+  }
+}
 /* Section 3 projects end */
 .social-networks {
   display: flex;
@@ -447,4 +473,76 @@ ul {
   transition: all 0.2s linear;
 }
 
+@media (max-width: 1024px) {
+  .footer-info__content-box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 60px;
+  }
+  .footer-info__about-as-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: start;
+    gap: 165px;
+  }
+  .footer-info__info-box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .our-contacts {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+  }
+  .our-contacts__contact {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+  }
+  .subscribe-box {
+    padding-top: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .subscribe-form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 20px;
+  }
+  .subscribe-form__title {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .subscribe-form__input {
+    width: 450px;
+    height: 50px;
+  }
+  .subscribe-form__button {
+    gap: 12px;
+  }
+}
 /* Section 4 footer-info end */
+@media (max-width: 1024px) {
+  .container {
+    width: 738px;
+  }
+  .logo__image {
+    width: 134px;
+    height: 28px;
+    flex-shrink: 0;
+  }
+  .main {
+    padding: 60px 0;
+    flex-direction: column;
+    gap: 30px;
+  }
+}

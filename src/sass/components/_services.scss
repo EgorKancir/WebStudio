@@ -72,8 +72,7 @@
     flex-direction: column;
     justify-content: center;
     gap: 12px;
-    width: 528px;
-    height: 581px;
+    padding: 40px;
     flex-shrink: 0;
     position: fixed;
     z-index: 20;
@@ -198,7 +197,7 @@
     }
     &__checkbox-text {
         @extend %position-center;
-        gap: 7px;
+        gap: 8px;
         color: var(--gray-dark-color_text);
         font-family: $main-font;
         font-size: 14px;
@@ -254,4 +253,39 @@
     background: rgba(0, 0, 0, 0.5);
     backdrop-filter: blur(3px);
     z-index: 17;
+}
+// Tablet
+@media (max-width: 1024px) {
+    .services {
+        padding: 118px 0px;
+        &__title {
+            width: 360px;
+            font-size: 26px;
+        }
+        &__button {
+            padding: 10px 24px;
+            flex-shrink: 0;
+        }
+    }
+    .modal {
+        &__title {
+            width: 370px;
+        }
+    }
+    .modal-form {
+        &__input {
+            width: 370px;
+            height: 40px;
+        }
+        &__input-commit {
+            width: 370px;
+            height: 120px;
+        }
+        &__checkbox-text {
+            font-size: 12px;
+        }
+        &__link {
+            font-size: 12px;
+        }
+    }
 }
