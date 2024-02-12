@@ -173,8 +173,6 @@
   content: "\e90f";
   color: #afb1b8;
   font-size: 92px;
-  width: 170px;
-  height: 92px;
   border-radius: 4px;
   border: 1px solid #AFB1B8;
   transition: color 0.2s linear;
@@ -188,8 +186,6 @@
   content: "\e910";
   color: #afb1b8;
   font-size: 92px;
-  width: 170px;
-  height: 92px;
   border-radius: 4px;
   border: 1px solid #AFB1B8;
   transition: color 0.2s linear;
@@ -202,9 +198,7 @@
 .icon-logo-company3:before {
   content: "\e911";
   color: #afb1b8;
-  font-size: 92px;
-  width: 170px;
-  height: 92px;
+  font-size: 92px;;
   border-radius: 4px;
   border: 1px solid #AFB1B8;
   transition: color 0.2s linear;
@@ -218,8 +212,6 @@
   content: "\e912";
   color: #afb1b8;
   font-size: 92px;
-  width: 170px;
-  height: 92px;
   border-radius: 4px;
   border: 1px solid #AFB1B8;
   transition: color 0.2s linear;
@@ -233,8 +225,6 @@
   content: "\e913";
   color: #afb1b8;
   font-size: 92px;
-  width: 170px;
-  height: 92px;
   border-radius: 4px;
   border: 1px solid #AFB1B8;
   transition: color 0.2s linear;
@@ -248,8 +238,6 @@
   content: "\e914";
   color: #afb1b8;
   font-size: 92px;
-  width: 170px;
-  height: 92px;
   border-radius: 4px;
   border: 1px solid #AFB1B8;
   transition: color 0.2s linear;

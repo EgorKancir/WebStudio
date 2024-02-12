@@ -170,3 +170,13 @@
         }
     }
 }
+// Mobile 
+@media (max-width: 768px)  {
+    .footer-info {
+        &__about-as-section {
+            @include flex(center, center);
+            flex-wrap: wrap;
+            gap: 60px;
+        }
+    }
+}

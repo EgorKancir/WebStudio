@@ -82,3 +82,13 @@
         }
     }
 }
+// Mobile 
+@media (max-width: 768px) {
+    .worker {
+        width: 100%;
+        &__image {
+            width: 450px;
+            height: 460px;
+        }
+    }
+}

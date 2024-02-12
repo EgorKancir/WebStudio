@@ -6,7 +6,7 @@
     }
 }
 .achievement-card {
-    @include flex(normal,  flex-start);
+    @include flex(center,  flex-start);
     flex-direction: column;
     gap: 10px;
     &::before {
@@ -69,6 +69,27 @@
         &::before {
             content: "";
             width: 354px;
+            height: 120px;
+        }
+        &__paragraf {
+            width: 354px;
+        }
+    }
+}
+@media (max-width: 768px) {
+    .achievement {
+        padding: 60px 0;
+        &__content-box {
+            @include flex(center,  normal);
+            flex-wrap: wrap;
+            gap: 30px;
+        }
+    }
+    .achievement-card {
+        @include flex(center, center);
+        &::before {
+            content: "";
+            width: 450px;
             height: 120px;
         }
         &__paragraf {

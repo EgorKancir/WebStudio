@@ -44,6 +44,7 @@ ul {
 /* Section 4 footer-info */
 @import'components/footer-info';
 /* Section 4 footer-info end */
+// Tablet
 @media (max-width: 1024px) {
     .container {
         width: 738px;
@@ -60,5 +61,18 @@ ul {
         @extend %position-center;
         flex-direction: column;
         gap: 30px;
+    }
+}
+// Mobile
+@media (max-width: 768px) {
+    .container {
+        width: 450px;
+    }
+    .logo {
+        &__image {
+            width: 134px;
+            height: 28px;
+            flex-shrink: 0;
+        }
     }
 }

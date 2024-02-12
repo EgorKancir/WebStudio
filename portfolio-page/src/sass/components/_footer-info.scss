@@ -127,6 +127,7 @@
         }
     }
 }
+// Tablet
 @media (max-width: 1024px) {
     .footer-info {
         &__content-box {
@@ -167,6 +168,16 @@
         }
         &__button {
             gap: 12px;
+        }
+    }
+}
+// Mobile 
+@media (max-width: 768px)  {
+    .footer-info {
+        &__about-as-section {
+            @include flex(center, center);
+            flex-wrap: wrap;
+            gap: 60px;
         }
     }
 }

@@ -1,6 +1,6 @@
 .projects-gallery {
     &__content-box {
-        @include flex(space-between, center);
+        @include flex(center, center);
         flex-wrap: wrap;
         gap: 30px;
     }
@@ -110,6 +110,17 @@
         }
         &__overley-paragraf {
             width: 306px;
+        }
+    }
+}
+// Mobile
+@media (max-width: 768px) {
+    .project {
+        &__container {
+            width: 450px;
+        }
+        &__overley-paragraf {
+            width: 402px;
         }
     }
 }

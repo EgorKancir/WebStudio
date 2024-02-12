@@ -72,3 +72,15 @@ ul {
         font-size: 28px;
     }
 }
+@media (max-width: 768px) {
+    .container {
+        width: 450px;
+    }
+    .logo {
+        &__image {
+            width: 134px;
+            height: 28px;
+            flex-shrink: 0;
+        }
+    }
+}

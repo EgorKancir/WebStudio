@@ -9,6 +9,7 @@
 .navigtion-console {
     &__list {
         @extend %position-center;
+        flex-wrap: wrap;
         gap: 8px;
     }
     &__link {

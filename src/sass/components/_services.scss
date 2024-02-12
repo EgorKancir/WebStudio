@@ -289,3 +289,36 @@
         }
     }
 }
+@media (max-width: 768px) {
+    .services {
+        padding: 118px 0px;
+        &__title {
+            width: 360px;
+            font-size: 26px;
+        }
+        &__button {
+            padding: 10px 24px;
+        }
+    }
+    .modal {
+        &__title {
+            width: 370px;
+        }
+    }
+    .modal-form {
+        &__input {
+            width: 370px;
+            height: 40px;
+        }
+        &__input-commit {
+            width: 370px;
+            height: 120px;
+        }
+        &__checkbox-text {
+            font-size: 12px;
+        }
+        &__link {
+            font-size: 12px;
+        }
+    }
+}
