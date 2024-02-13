@@ -33,3 +33,10 @@
         }
     }
 }
+@media (max-width: 500px) {
+    .navigtion-console {
+        &__list {
+            gap:20px;
+        }
+    }
+}

@@ -59,7 +59,7 @@ ul {
 /* Section 7 footer-info end */
 @media (max-width: 1024px) {
     .container {
-        width: 738px;
+        width: 768px;
     }
     .logo {
         &__image {
@@ -74,7 +74,7 @@ ul {
 }
 @media (max-width: 768px) {
     .container {
-        width: 450px;
+        width: 480px;
     }
     .logo {
         &__image {
@@ -82,5 +82,10 @@ ul {
             height: 28px;
             flex-shrink: 0;
         }
+    }
+}
+@media (max-width: 480px) {
+    .container {
+        width: 270px;
     }
 }

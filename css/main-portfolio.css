@@ -221,19 +221,18 @@ ul {
   }
   .menu-body {
     position: fixed;
-    top: 0;
     left: 0;
+    top: 0;
     z-index: 10;
-    padding: 48px 40px;
+    width: 100%;
+    height: 100%;
     display: flex;
     justify-content: space-between;
     align-items: start;
     flex-direction: column;
-    width: 100%;
-    height: 100%;
     background-color: var(--white-standard-color);
     transform: translate(-100%, 0px);
-    transition: left 0.3s ease 0s;
+    transition: right 0.3s ease 0s;
     overflow: auto;
   }
   .menu-body._active {
@@ -241,6 +240,9 @@ ul {
   }
   body._lock {
     overflow: hidden;
+  }
+  .navigation {
+    padding: 48px 0 20px 40px;
   }
   .navigation__list {
     display: flex;
@@ -251,13 +253,12 @@ ul {
   }
   .navigation__item:nth-child(2) .navigation__link {
     display: block;
-    transform: scale(1.1);
     color: var(--blue-light-color_text-hover);
   }
   .navigation__item:nth-child(2) .navigation__link::before {
     content: "";
     position: absolute;
-    bottom: -29px;
+    bottom: -10px;
     width: 100%;
     height: 4px;
     border-radius: 2px;
@@ -278,7 +279,17 @@ ul {
     transition: all 0.2s ease-in-out 0.05s;
     color: var(--blue-light-color_text-hover);
   }
+  .navigation__link:hover::before {
+    content: "";
+    position: absolute;
+    bottom: -10px;
+    width: 100%;
+    border-radius: 2px;
+    height: 4px;
+    background-color: var(--blue-light-color);
+  }
   .info {
+    padding: 0 0 48px 40px;
     display: flex;
     justify-content: center;
     align-items: start;
@@ -305,9 +316,6 @@ ul {
     transform: scale(1.1);
     transition: all 0.2s ease;
     color: var(--blue-light-color_text-hover);
-  }
-  .contact__link::before {
-    content: none;
   }
   .icon-envelope,
   .icon-smartphone {
@@ -336,6 +344,11 @@ ul {
     width: 1px;
     height: 22px;
     background: rgba(33, 33, 33, 0.2);
+  }
+}
+@media (max-width: 500px) {
+  .nav-social-networks__link {
+    font-size: 15px;
   }
 }
 /*Section 1 header-console end */
@@ -375,6 +388,11 @@ ul {
   transition: 0.2s;
 }
 
+@media (max-width: 500px) {
+  .navigtion-console__list {
+    gap: 20px;
+  }
+}
 /* Section 2 navigtion-console end */
 /* Section 3 projects */
 .projects-gallery__content-box {
@@ -499,6 +517,14 @@ ul {
   }
   .project__overley-paragraf {
     width: 402px;
+  }
+}
+@media (max-width: 500px) {
+  .project__container {
+    width: 270px;
+  }
+  .project__overley-paragraf {
+    width: 207px;
   }
 }
 /* Section 3 projects end */
@@ -725,10 +751,15 @@ ul {
     gap: 60px;
   }
 }
+@media (max-width: 500px) {
+  .subscribe-form__input {
+    width: 250px;
+  }
+}
 /* Section 4 footer-info end */
 @media (max-width: 1024px) {
   .container {
-    width: 738px;
+    width: 768px;
   }
   .logo__image {
     width: 134px;
@@ -743,11 +774,16 @@ ul {
 }
 @media (max-width: 768px) {
   .container {
-    width: 450px;
+    width: 480px;
   }
   .logo__image {
     width: 134px;
     height: 28px;
     flex-shrink: 0;
+  }
+}
+@media (max-width: 480px) {
+  .container {
+    width: 270px;
   }
 }

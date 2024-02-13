@@ -322,3 +322,37 @@
         }
     }
 }
+@media (max-width: 500px) {
+    .services {
+        padding: 118px 0px;
+        &__title {
+            width: 270px;
+            font-size: 20px;
+        }
+        &__button {
+            padding: 10px 24px;
+        }
+    }
+    .modal {
+        &__title {
+            width: 220px;
+        }
+    }
+    .modal-form {
+        &__input {
+            width: 240px;
+            height: 40px;
+        }
+        &__input-commit {
+            width: 252px;
+            height: 90px;
+        }
+        &__checkbox-text {
+            font-size: 12px;
+            flex-wrap: wrap;
+        }
+        &__link {
+            font-size: 12px;
+        }
+    }
+}

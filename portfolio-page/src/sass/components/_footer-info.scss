@@ -181,3 +181,10 @@
         }
     }
 }
+@media (max-width: 500px) {
+    .subscribe-form {
+        &__input {
+            width: 250px;
+        }
+    }
+}

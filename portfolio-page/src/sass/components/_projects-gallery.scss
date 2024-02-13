@@ -124,3 +124,13 @@
         }
     }
 }
+@media (max-width: 500px) {
+    .project {
+        &__container {
+            width: 270px;
+        }
+        &__overley-paragraf {
+            width: 207px;
+        }
+    }
+}

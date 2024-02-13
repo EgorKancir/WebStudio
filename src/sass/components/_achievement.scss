@@ -97,3 +97,24 @@
         }
     }
 }
+@media (max-width: 500px) {
+    .achievement {
+        padding: 60px 0;
+        &__content-box {
+            @include flex(center,  normal);
+            flex-wrap: wrap;
+            gap: 30px;
+        }
+    }
+    .achievement-card {
+        @include flex(center, center);
+        &::before {
+            content: "";
+            width: 270px;
+            height: 120px;
+        }
+        &__paragraf {
+            width: 270px;
+        }
+    }
+}

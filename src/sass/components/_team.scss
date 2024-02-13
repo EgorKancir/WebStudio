@@ -92,3 +92,11 @@
         }
     }
 }
+@media (max-width: 500px) {
+    .worker {
+        &__image {
+            width: 270px;
+            height: 280px;
+        }
+    }
+}
