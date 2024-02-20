@@ -61,7 +61,6 @@ ul {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 0;
   gap: 93px;
 }
 
@@ -342,7 +341,7 @@ ul {
     background: rgba(33, 33, 33, 0.2);
   }
 }
-@media (max-width: 500px) {
+@media (max-width: 480px) {
   .nav-social-networks__link {
     font-size: 15px;
   }
@@ -661,7 +660,7 @@ ul {
     font-size: 12px;
   }
 }
-@media (max-width: 500px) {
+@media (max-width: 480px) {
   .services {
     padding: 118px 0px;
   }
@@ -811,7 +810,7 @@ ul {
     width: 354px;
   }
 }
-@media (max-width: 500px) {
+@media (max-width: 480px) {
   .achievement {
     padding: 60px 0;
   }
@@ -1026,10 +1025,10 @@ ul {
     height: 460px;
   }
 }
-@media (max-width: 500px) {
+@media (max-width: 480px) {
   .worker__image {
-    width: 270px;
-    height: 280px;
+    width: 100%;
+    height: 320px;
   }
 }
 /* Section 5 team end */
@@ -1296,7 +1295,7 @@ ul {
     gap: 60px;
   }
 }
-@media (max-width: 500px) {
+@media (max-width: 480px) {
   .subscribe-form__input {
     width: 250px;
   }
@@ -1327,6 +1326,6 @@ ul {
 }
 @media (max-width: 480px) {
   .container {
-    width: 270px;
+    width: 320px;
   }
 }

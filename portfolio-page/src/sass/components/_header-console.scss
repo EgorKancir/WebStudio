@@ -4,7 +4,6 @@
     padding: 24px 0 25px 0;
     &__content-box {
         @include flex(space-between, center);
-        padding: 0;
         gap: 93px;
     }
 }
@@ -274,7 +273,7 @@
         }
     }
 }
-@media (max-width: 500px) {
+@media (max-width: 480px) {
     .nav-social-networks {
         &__link {
             font-size: 15px;
