@@ -103,6 +103,41 @@
         letter-spacing: 0.48px;
     }
 }
+@media (min-device-pixel-ratio: 2), 
+(-webkit-min-device-pixel-ratio: 2),
+(min-resolution: 192dpi), 
+(min-resolution: 2dppx) {
+    .project {
+        &:nth-child(1) &__image {
+            background: url("../portfolio-page/src/image/raster-image/section3_projects/port-img_1@2x.png");
+        }
+        &:nth-child(2) &__image {
+            background: url("../portfolio-page/src/image/raster-image/section3_projects/port-img_2@2x.png");
+        }
+        &:nth-child(3) &__image {
+            background: url("../portfolio-page/src/image/raster-image/section3_projects/port-img_3@2x.png");
+        }
+        &:nth-child(4) &__image {
+            background: url("../portfolio-page/src/image/raster-image/section3_projects/port-img_4@2x.png");
+        }
+        &:nth-child(5) &__image {
+            background: url("../portfolio-page/src/image/raster-image/section3_projects/port-img_5@2x.png");
+        }
+        &:nth-child(6) &__image {
+            background: url("../portfolio-page/src/image/raster-image/section3_projects/port-img_6@2x.png");
+        }
+        &:nth-child(7) &__image {
+            background: url("../portfolio-page/src/image/raster-image/section3_projects/port-img_7@2x.png");
+        }
+        &:nth-child(8) &__image {
+            background: url("../portfolio-page/src/image/raster-image/section3_projects/port-img_8@2x.png");
+        }
+        &:nth-child(9) &__image {
+            background: url("../portfolio-page/src/image/raster-image/section3_projects/port-img_9@2x.png");
+        }
+    }
+}
+// Tablet
 @media (max-width: 1024px) {
     .project {
         &__container {

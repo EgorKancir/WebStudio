@@ -23,6 +23,7 @@
     &__item {
         &:nth-child(1) .navigation__link {
             display: block;
+            transform: scale(1.1);
             color: var(--blue-light-color_text-hover);
         }
         &:nth-child(1) .navigation__link::before {

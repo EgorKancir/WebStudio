@@ -82,6 +82,7 @@ ul {
 }
 .navigation__item:nth-child(1) .navigation__link {
   display: block;
+  transform: scale(1.1);
   color: var(--blue-light-color_text-hover);
 }
 .navigation__item:nth-child(1) .navigation__link::before {
@@ -396,6 +397,11 @@ ul {
   background: linear-gradient(180deg, rgba(0, 0, 0, 0.2) 46.35%, rgba(0, 0, 0, 0) 100%), var(--blue-light-color);
 }
 
+@media (min-device-pixel-ratio: 2), (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+  .services {
+    background-image: url("../src/image/raster-image/section2_services/background_one@2x.png");
+  }
+}
 @keyframes services {
   0% {
     transform: scale(1);
@@ -710,7 +716,7 @@ ul {
 .achievement__content-box {
   display: flex;
   justify-content: space-between;
-  align-items: normal;
+  align-items: start;
 }
 
 .achievement-card {
@@ -733,16 +739,16 @@ ul {
   margin-bottom: 30px;
 }
 .achievement-card:nth-child(1)::before {
-  background-image: url("../src/image/raster-image/section3_achievement/antenna1.png");
+  background-image: url("../src/image/vector-image/section3_achievement/antenna1.svg");
 }
 .achievement-card:nth-child(2)::before {
-  background-image: url("../src/image/raster-image/section3_achievement/clock1.png");
+  background-image: url("../src/image/vector-image/section3_achievement/clock1.svg");
 }
 .achievement-card:nth-child(3)::before {
-  background-image: url("../src/image/raster-image/section3_achievement/diagram1.png");
+  background-image: url("../src/image/vector-image/section3_achievement/diagram1.svg");
 }
 .achievement-card:nth-child(4)::before {
-  background-image: url("../src/image/raster-image/section3_achievement/astronaut1.png");
+  background-image: url("../src/image/vector-image/section3_achievement/astronaut1.svg");
 }
 .achievement-card__title {
   color: var(--black-standard-color_text);
@@ -898,17 +904,6 @@ ul {
 .work-card:nth-child(3) > .work-card__box--animation > .work-card__image {
   background-image: url("../src/image/raster-image/section4_work/img3.jpg");
 }
-@keyframes work-hover {
-  0% {
-    transform: translateY(224px);
-  }
-  33.3% {
-    transform: translateY(224px);
-  }
-  66.6% {
-    transform: translateY(294px);
-  }
-}
 .work-card:nth-child(1) > .work-card__box--animation > .work-card__image::before {
   content: "Десктопні додатки";
   animation: work-hover 6s linear 0s infinite alternate backwards;
@@ -922,6 +917,28 @@ ul {
   animation: work-hover 6s linear 4s infinite alternate backwards;
 }
 
+@keyframes work-hover {
+  0% {
+    transform: translateY(224px);
+  }
+  33.3% {
+    transform: translateY(224px);
+  }
+  66.6% {
+    transform: translateY(294px);
+  }
+}
+@media (min-device-pixel-ratio: 2), (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+  .work-card:nth-child(1) > .work-card__box--animation > .work-card__image {
+    background-image: url("../src/image/raster-image/section4_work/img1@2x.jpg");
+  }
+  .work-card:nth-child(2) > .work-card__box--animation > .work-card__image {
+    background-image: url("../src/image/raster-image/section4_work/img2@2x.jpg");
+  }
+  .work-card:nth-child(3) > .work-card__box--animation > .work-card__image {
+    background-image: url("../src/image/raster-image/section4_work/img3@2x.jpg");
+  }
+}
 @media (max-width: 1024px) {
   .work {
     display: none;

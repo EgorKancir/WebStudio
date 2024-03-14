@@ -2,7 +2,7 @@
     margin: 0;
     padding: 94px 0;
     &__content-box {
-        @include flex(space-between,  normal);
+        @include flex(space-between,  start);
     }
 }
 .achievement-card {
@@ -22,16 +22,16 @@
         margin-bottom: 30px;
     }
     &:nth-child(1)::before {
-        background-image: url("../src/image/raster-image/section3_achievement/antenna1.png");
+        background-image: url("../src/image/vector-image/section3_achievement/antenna1.svg");
     }
     &:nth-child(2)::before {
-        background-image: url("../src/image/raster-image/section3_achievement/clock1.png");
+        background-image: url("../src/image/vector-image/section3_achievement/clock1.svg");
     }
     &:nth-child(3)::before {
-        background-image: url("../src/image/raster-image/section3_achievement/diagram1.png");
+        background-image: url("../src/image/vector-image/section3_achievement/diagram1.svg");
     }
     &:nth-child(4)::before {
-        background-image: url("../src/image/raster-image/section3_achievement/astronaut1.png");
+        background-image: url("../src/image/vector-image/section3_achievement/astronaut1.svg");
     }
     &__title {
         color: var(--black-standard-color_text);

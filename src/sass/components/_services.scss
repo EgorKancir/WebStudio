@@ -49,6 +49,14 @@
         background: linear-gradient(180deg, rgba(0, 0, 0, 0.20) 46.35%, rgba(0, 0, 0, 0.00) 100%), var(--blue-light-color);
     }
 }
+@media (min-device-pixel-ratio: 2), 
+(-webkit-min-device-pixel-ratio: 2),
+(min-resolution: 192dpi), 
+(min-resolution: 2dppx) {
+        .services {
+            background-image: url("../src/image/raster-image/section2_services/background_one@2x.png");
+        }
+}
 @keyframes services {
     0% {
         transform: scale(1);

@@ -62,17 +62,6 @@
     &:nth-child(3) > &__box--animation > &__image {
         background-image: url("../src/image/raster-image/section4_work/img3.jpg");
     }
-    @keyframes work-hover {
-        0% {
-            transform: translateY(224px);
-        }
-        33.3% {
-            transform: translateY(224px);
-        }
-        66.6% {
-            transform: translateY(294px);
-        }
-    }
     &:nth-child(1) > &__box--animation > &__image::before {
         content: "Десктопні додатки";
         animation: work-hover 6s linear 0s infinite alternate backwards;
@@ -84,6 +73,33 @@
     &:nth-child(3) > &__box--animation > &__image::before {
         content: "Дизайнерські рішення";
         animation: work-hover 6s linear 4s infinite alternate backwards;
+    }
+}
+@keyframes work-hover {
+    0% {
+        transform: translateY(224px);
+    }
+    33.3% {
+        transform: translateY(224px);
+    }
+    66.6% {
+        transform: translateY(294px);
+    }
+}
+@media (min-device-pixel-ratio: 2),
+(-webkit-min-device-pixel-ratio: 2),
+(min-resolution: 192dpi),
+(min-resolution: 2dppx) {
+    .work-card {
+        &:nth-child(1) > &__box--animation > &__image {
+            background-image: url("../src/image/raster-image/section4_work/img1@2x.jpg");
+        }
+        &:nth-child(2) > &__box--animation > &__image {
+            background-image: url("../src/image/raster-image/section4_work/img2@2x.jpg");
+        }
+        &:nth-child(3) > &__box--animation > &__image {
+            background-image: url("../src/image/raster-image/section4_work/img3@2x.jpg");
+        }
     }
 }
 // Tablet
